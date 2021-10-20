@@ -1,0 +1,21 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/font-agenda.css": "/css/font-agenda.css",
+    "/css/app.css": "/css/app.css",
+    "/svg/close.svg": "/svg/close.svg",
+    "/svg/down-active.svg": "/svg/down-active.svg",
+    "/svg/down-disable.svg": "/svg/down-disable.svg",
+    "/svg/down.svg": "/svg/down.svg",
+    "/svg/email-white.svg": "/svg/email-white.svg",
+    "/svg/email.svg": "/svg/email.svg",
+    "/svg/facebook-pink.svg": "/svg/facebook-pink.svg",
+    "/svg/facebook-white.svg": "/svg/facebook-white.svg",
+    "/svg/facebook.svg": "/svg/facebook.svg",
+    "/svg/hand.svg": "/svg/hand.svg",
+    "/svg/home.svg": "/svg/home.svg",
+    "/svg/icons.svg": "/svg/icons.svg",
+    "/svg/loader.svg": "/svg/loader.svg",
+    "/svg/logo.svg": "/svg/logo.svg",
+    "/svg/next.svg": "/svg/next.svg",
+    "/svg/search.svg": "/svg/search.svg"
+}
