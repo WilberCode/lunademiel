@@ -1,4 +1,3 @@
-
 <?php
 wp_register_script( 'app', get_template_directory_uri() . '/build/js/app.js');
 wp_enqueue_script( 'app' );
