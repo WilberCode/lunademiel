@@ -117,7 +117,7 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
 
 wp_register_script( 'app', get_template_directory_uri() . '/build/js/app.js');
-wp_enqueue_script( 'app' );
+/* wp_enqueue_script( 'app' ); */
 
 wp_localize_script( 'app', 'ajax_posts', array(
     'ajaxurl' => admin_url( 'admin-ajax.php' ),
