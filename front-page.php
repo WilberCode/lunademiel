@@ -132,11 +132,11 @@ get_header();?>
         <div class="w-full  block xl1:hidden my-4 h-auto  " > 
         <!-- Home - Sidebar Right -->
             <ins class="adsbygoogle" 
-                style="display:block;width:100%;height:auto"
+                style="display:block"
                 data-ad-client="ca-pub-2072313038095874"
-                data-ad-slot="3701807524"
+                data-ad-slot="2403965899"
                 data-ad-format="auto"
-                 data-full-width-responsive="true"
+                data-full-width-responsive="true"
                 ></ins>
                 <script>
                       (adsbygoogle = window.adsbygoogle || []).push({});

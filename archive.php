@@ -8,9 +8,7 @@
  
 global $wp;
 $current_slug = add_query_arg( array(), $wp->request );  
- 
 
- 
  ?> 
 <main class="main"> 
 	<div class="container">
