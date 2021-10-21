@@ -53,7 +53,9 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
 
     gtag('config', 'UA-127421070-1');
     </script>
-
+    
+    <!-- Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874" crossorigin="anonymous"></script>
 
     <?php wp_head() ?> 
 

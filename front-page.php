@@ -104,42 +104,18 @@ get_header();?>
                 <?php echo do_shortcode('[ldm_post category="bodas" ]'); ?>                    
                 <?php echo do_shortcode('[ldm_post category="viajes" ]'); ?>        
             </div>
-            
-            <?php
-					global $post; 
-					//query subpages
-					$args_news = array(
-					'post_type' => 'novedades',
-					'orderby' => 'date',
-					'orderby' => 'desc',
-					'posts_per_page' => 3
-					); 
-					$news = new WP_query($args_news);  
-            ?>
-            <h3  class="text-[24px] text-center uppercase mt-8" ><?=$news->query_vars['post_type']?> </h3>
-            <div class="grid  grid-cols-1 sm:grid-cols-3 gap-6 mt-5 " >
-                    <?php 
-                    /* Listing news Post */
-					if ($news->have_posts()) :
-						while ($news->have_posts()) : $news->the_post();
-							$arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
-							if ( $arr_image[0] != '' ) :
-								 $imagethumb = $arr_image[0];
-							else :
-								 $imagethumb = get_template_directory_uri()."/build/img/thumb-default.jpg";
-							endif;?>
-                            
-							 <article class="text-center"> 
-						        <a class="hover:underline" href="<?=get_permalink()?>" ><img class="inline-flex" src="<?=$imagethumb?>" alt="<?=get_the_title()?>"/> <h2 class="mt-2 sm:text-[20px] leading-5" ><?=get_the_title()?></h2> </a>
-							 </article> 
-					<?php
-                            endwhile;
-					endif;
-
-					// reset the query
-					wp_reset_postdata();
-				  ?> 
-            </div>   
+            <div class="row ins-wrap mt-10"   >
+                   <!-- Home - Full -->
+                  <ins class="adsbygoogle"
+                      style="display:block"
+                      data-ad-client="ca-pub-2072313038095874"
+                      data-ad-slot="3701807524"
+                      data-ad-format="auto"
+                      data-full-width-responsive="true"></ins>
+                  <script>
+                      (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+            </div> 
         </section>
         <?php 	 ?>
     </main>
