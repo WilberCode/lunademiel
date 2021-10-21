@@ -27,7 +27,7 @@ get_header();?>
             <ins class="adsbygoogle" 
                 style="display:inline-block;width:100%;height:auto"
                 data-ad-client="ca-pub-2072313038095874"
-                data-ad-slot="5262301206"></ins>
+                data-ad-slot="7278848626"></ins>
         </div>
         <div  class="block sm:flex space-y-4 sm:space-y-0 sm:space-x-6 " > 
             <div  class="flex-1 space-y-3" > 
@@ -118,14 +118,14 @@ get_header();?>
             <ins class="adsbygoogle" 
                 style="display:inline-block;width:140px;height:600px"
                 data-ad-client="ca-pub-2072313038095874"
-                data-ad-slot="5262301206"></ins>
+                data-ad-slot="1746007268"></ins>
         </div>
         <div class="w-full  block xl1:hidden my-4 h-auto  " > 
         <!-- Home - Sidebar Right -->
             <ins class="adsbygoogle" 
                 style="display:inline-block;width:100%;height:auto"
                 data-ad-client="ca-pub-2072313038095874"
-                data-ad-slot="5262301206"></ins>
+                data-ad-slot="1746007268"></ins>
         </div>
         <section  class="max-w-[870px] mx-auto mt-10" >
             <div class="grid  grid-cols-1 sm:grid-cols-3 gap-6 " >
