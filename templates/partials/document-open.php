@@ -2,8 +2,8 @@
 <html lang="ES" class="no-js">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title><?= wp_get_document_title() ?></title>  
     <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');</script>
      <meta name="keywords" content="Guía para parejas, Luna de miel, deco, home deco, decoración de interiores, diseño de interiores, diseño de interiores de casas, estilo nórdico, decoración departamento, estilo minimalista, casa rustica moderna, estilo industrial, estilo étnico, Boho chic, estilo mediterráneo moda, vivienda, ropa para mujer, cine, entretenimiento, farándula, eventos, actividades en pareja, cinerama, música en vivo, restaurante, novedades, 
