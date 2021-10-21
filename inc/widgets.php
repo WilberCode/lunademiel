@@ -98,14 +98,11 @@ function wph_theme_support() {
 
 add_action( 'after_setup_theme', 'wph_theme_support' );
 
-
- 
-
-
+  
 // Widgets
  
 function wph_front_widgets(){
-    register_sidebar(array(
+ /*    register_sidebar(array(
         'name' => __('Footer - Información de pie de página'),
         'id' =>'footer-info',
         'description'   => 'Informacion legal de la empresa',
@@ -113,7 +110,7 @@ function wph_front_widgets(){
 		'after_widget'  => '</div>',
 		'before_title' => '<h2 class="hidden">',
         'after_title'  => '</h2>'
-    ));   
+    ));   */ 
     register_sidebar(array(
         'name' => __('Home - Banner principal'),
         'id' =>'home-banner',
