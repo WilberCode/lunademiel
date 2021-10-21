@@ -20,13 +20,45 @@ get_header();?>
                 <?php $the_query = new WP_Query( 'page_id=228' ); ?> 
                 <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>   
                     <div class="home-box" style="background:url(<?php echo thumbnail_image_url('full')?>)">
-                        <dl class="home-box-content ">
+                        <dl class="home-box-content !py-3 ">
                             <dt>
-                                <a href="<?php the_permalink(); ?>">
-                                    <h2><?php the_title(); ?></h2> 
+                               <!--  <a href="<?php// the_permalink(); ?>">
+                                    <h2><?php/// the_title(); ?></h2> 
+                                </a> -->
+                                <a href="<?php echo home_url( $wp->request );?>/mundo-parejas/">
+                                    <!-- <h2>AGENDA ROMÁNTICA</h2>  -->
+                                    <h2>MUNDO PAREJAS</h2> 
                                 </a>
                             </dt>  
+                            <dd  class="text-sm mt-2 " >
+                            <?php
+                                global $post;
+                                
+                                //query subpages
+                                $args = array(
+                                'post_type' => 'mundo-parejas',
+                                'orderby' => 'date',
+                                'orderby' => 'desc',
+                                'posts_per_page' => 4
+                                );
+
+                                $listing = new WP_query($args);
+                                $mundo_count = 1;
+                                // create output
+                                if ($listing->have_posts()) :
+                                while ($listing->have_posts()) : $listing->the_post();
+                                    if(	$mundo_count > 1){echo " / ";}else{echo "";}
+                                    echo '<a href="' . get_permalink() . '">'.get_the_title().'</a>';
+                                    $mundo_count++;
+                                endwhile;
+                                endif;
+
+                                // reset the query
+                                wp_reset_postdata();
+                                ?>
+                            </dd>
                         </dl>
+                      
                     </div>
                  <?php endwhile;
                  wp_reset_postdata();
