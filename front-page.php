@@ -14,12 +14,26 @@ get_header();?>
   ?>
 <?php global $wp;  ?> 
 <section>
-    <main   class="max-w-container" >
-        <div  class="block sm:flex space-y-4 sm:space-y-0 sm:space-x-6 " >
-            <div  class="   flex-1 space-y-3" > 
+    <main   class="max-w-container relative" >
+        <div class="w-[140px] hidden xl1:block   top-0  absolute left-0 h-auto translate-x-[-140px] " > 
+        <!-- Home - Sidebar Left -->
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:140px;height:600px"
+                data-ad-client="ca-pub-2072313038095874"
+                data-ad-slot="5262301206"></ins>
+        </div>  
+        <div class="w-full  block xl1:hidden my-4 h-auto  " > 
+        <!-- Home - Sidebar Left -->
+            <ins class="adsbygoogle" 
+                style="display:inline-block;width:100%;height:auto"
+                data-ad-client="ca-pub-2072313038095874"
+                data-ad-slot="5262301206"></ins>
+        </div>
+        <div  class="block sm:flex space-y-4 sm:space-y-0 sm:space-x-6 " > 
+            <div  class="flex-1 space-y-3" > 
                 <?php $the_query = new WP_Query( 'page_id=228' ); ?> 
                 <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>   
-                    <div class="home-box" style="background:url(<?php echo thumbnail_image_url('full')?>)">
+                    <div class=" !h-[280px] md:!h-[250px] home-box" style="background:url(<?php echo thumbnail_image_url('full')?>)">
                         <dl class="home-box-content !py-3 ">
                             <dt>
                                <!--  <a href="<?php// the_permalink(); ?>">
@@ -96,7 +110,22 @@ get_header();?>
             </div>
             <div  class=" flex-grow  max-w-[320px] mx-auto  ">
                 <?php dynamic_sidebar('home-sidebar') ?>   
-            </div>
+            </div> 
+        </div>
+       
+        <div class="w-[140px]  hidden xl1:block top-0  absolute right-0 h-auto translate-x-[140px] " > 
+        <!-- Home - Sidebar Right -->
+            <ins class="adsbygoogle" 
+                style="display:inline-block;width:140px;height:600px"
+                data-ad-client="ca-pub-2072313038095874"
+                data-ad-slot="5262301206"></ins>
+        </div>
+        <div class="w-full  block xl1:hidden my-4 h-auto  " > 
+        <!-- Home - Sidebar Right -->
+            <ins class="adsbygoogle" 
+                style="display:inline-block;width:100%;height:auto"
+                data-ad-client="ca-pub-2072313038095874"
+                data-ad-slot="5262301206"></ins>
         </div>
         <section  class="max-w-[870px] mx-auto mt-10" >
             <div class="grid  grid-cols-1 sm:grid-cols-3 gap-6 " >
