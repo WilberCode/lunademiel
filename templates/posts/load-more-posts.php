@@ -1,12 +1,4 @@
-<?php
-wp_register_script( 'app', get_template_directory_uri() . '/build/js/app.js');
-wp_enqueue_script( 'app' );
-
-wp_localize_script( 'app', 'ajax_posts', array(
-    'ajaxurl' => admin_url( 'admin-ajax.php' ),
-    'noposts' => __('No older posts found', 'ldm'),
-));
- 
+<?php 
 function more_post_ajax(){
  
     $ppp = (isset($_POST["ppp"])) ? $_POST["ppp"] : 3;
