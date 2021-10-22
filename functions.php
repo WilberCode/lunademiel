@@ -134,7 +134,6 @@ wp_localize_script( 'app', 'ajax_posts', array(
 require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';  
 =======
 <?php
-
 if (!is_page( array( 'quienes-somos' ) )) {
     require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';  
 
