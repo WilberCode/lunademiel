@@ -1,6 +1,5 @@
-<?php 
-function more_post_ajax(){
- 
+<?php
+function more_post_ajax(){ 
     $ppp = (isset($_POST["ppp"])) ? $_POST["ppp"] : 3;
     $page = (isset($_POST['pageNumber'])) ? $_POST['pageNumber'] : 0;
     $slug_name = (isset($_POST['current_slug'])) ? $_POST['current_slug'] : 'post';
