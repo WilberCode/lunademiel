@@ -131,7 +131,7 @@ if (!is_page( array( 'quienes-somos' ) )) {
         'noposts' => __('No older posts found', 'ldm'),
     ));
 
-    //require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';  
+    require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';  
      
 }
 
