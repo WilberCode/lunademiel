@@ -130,6 +130,7 @@ if (!is_page( array( 'quienes-somos' ) )) {
         'ajaxurl' => admin_url( 'admin-ajax.php' ),
         'noposts' => __('No older posts found', 'ldm'),
     ));
+    
      
 }
 
