@@ -5,7 +5,7 @@ get_header();?>
  <div class="404 bg-gray-200 border-b border-gray-300 "> 
    <div class="container">
     <div class="text-center py-10 ">
-            <h1 class="text-2xl">¡Oops!... Página no encontrada</h1>
+            <h1 class="text-2xl ">¡Oops!... Página no encontrada</h1>
             <p class="  max-w-2xl m-auto mt-5 text-xl">
                 La página que buscas no existe, probablemente el enlace que usaste es erróneo, intenta ubicarlo en la página principal o usa el buscador:
             </p> 
