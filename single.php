@@ -58,6 +58,18 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
             </section>
         </main> 
         <sidebar class="mx-auto w-full max-w-[320px] single-sidebar-wrap ">
+            <div  class="w-full mb-4 " > 
+                <!-- Post -  Sidebar  -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-2072313038095874"
+                data-ad-slot="9092330038"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins> 
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>  
+            </div> 
             <div class="mb-8"> 
                 <h2  class="text-[24px]" >Los más recientes</h2>
                 <div class="new card-thumbnail " >
