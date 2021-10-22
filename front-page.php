@@ -148,7 +148,7 @@ get_header();?>
                 <?php echo do_shortcode('[ldm_post category="bodas" ]'); ?>                    
                 <?php echo do_shortcode('[ldm_post category="viajes" ]'); ?>        
             </div>
-            <div class="mt-10"> 
+            <div class="mt-10 w-full "> 
                 <!-- Home - Footer- Responsive -->
                 <ins class="adsbygoogle"
                     style="display:block"
