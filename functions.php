@@ -117,8 +117,10 @@ function add_theme_scripts() {
 } 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );  
 
+?>
 
-
+<?php
+require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';  
 
 wp_register_script( 'app', get_template_directory_uri() . '/build/js/app.js');
 wp_enqueue_script( 'app' ); 
@@ -130,7 +132,7 @@ wp_localize_script( 'app', 'ajax_posts', array(
  
 
 
-require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';  
+
 
 
 
