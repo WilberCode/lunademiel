@@ -118,21 +118,6 @@ function add_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );  
 
 
-<<<<<<< HEAD
-
-
-wp_register_script( 'app', get_template_directory_uri() . '/build/js/app.js');
-wp_enqueue_script( 'app' ); 
-
-wp_localize_script( 'app', 'ajax_posts', array(
-    'ajaxurl' => admin_url( 'admin-ajax.php' ),
-    'noposts' => __('No older posts found', 'ldm'),
-));
- 
-
-
-require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';  
-=======
 <?php
 if (!is_page( array( 'quienes-somos' ) )) {
     require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';  
@@ -147,7 +132,6 @@ if (!is_page( array( 'quienes-somos' ) )) {
      
 }
 
->>>>>>> develop
 
 
 
