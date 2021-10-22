@@ -44,10 +44,7 @@ get_header();?>
                 <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>   
                     <div class=" !h-[280px] md:!h-[250px] home-box" style="background:url(<?php echo thumbnail_image_url('full')?>)">
                         <dl class="home-box-content !py-3 ">
-                            <dt>
-                              <!--   <a href="<?php// the_permalink(); ?>">
-                                    <h2><?php// the_title(); ?></h2> 
-                                </a> -->
+                            <dt> 
                                 <a href="<?php echo home_url( $wp->request );?>/mundo-parejas/">
                                     <!-- <h2>AGENDA ROMÁNTICA</h2>  -->
                                     <h2>MUNDO PAREJAS</h2> 
