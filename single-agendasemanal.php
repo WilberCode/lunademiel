@@ -21,7 +21,7 @@ $number_single = 1;
 				<div  class=" agenda-date  uppercase space-x-3 " >
 					<span class="text-primary-500 text-lg font-bold font-prelo " >ESPECIAL</span><span class="font-bold font-prelo"><?php echo get_the_date( 'F' ); ?> ></span>
 				</div>
-				<div class=" mt-4 text-gray-900 sm:mt-5 text-[35px]  sm:text-[50px] lg:text-[88.5px] tracking-wide   " style=" font-family:Didot ;"  >
+				<div class=" mt-4 text-gray-800 sm:mt-5 text-[35px]  sm:text-[50px] lg:text-[88.5px] tracking-wide  font-didot font-extralight  italic  "   >
 				#AgendaRomántica
 				</div> 
 				<p  class=" text-[12px] sm:text-[20px] lg:text-[22.53px]  mt-0 " >Ideas para romper la rutina y disfrutar toda la semana</p>
