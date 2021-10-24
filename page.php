@@ -31,9 +31,10 @@ $slug_name = $current_slug; */
 					);
 					
 					$listing = new WP_query($args);
-
+					$post_type_exist = false;
 					// create output
 					if ($listing->have_posts()) :
+						$post_type_exist = true;
 						while ($listing->have_posts()) : $listing->the_post();
 							$arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-listing');
 							if ( $arr_image[0] != '' ) :
@@ -54,9 +55,11 @@ $slug_name = $current_slug; */
 				  ?>
 				</div>
 			</div> 
-			<div class="text-center">
-				<button id="more_posts" class="btn">Ver todos los artículos</button> 
-			</div> 
+				<?php if($post_type_exist){ ?> 
+					<div class="text-center">
+						<button id="more_posts" class="btn">Ver todos los artículos</button> 
+					</div> 
+				<?php } ?>
 			 
 		</div>
 	</main>		
