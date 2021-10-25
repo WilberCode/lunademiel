@@ -15,7 +15,7 @@
 		<div class="msearch-posts   ">
 			<?php if(have_posts()):
 					while(have_posts()):  the_post(); ?>  
-						<a href="<?php the_permalink();?>" class=" flex leading-5 sm:leading-6 mb-4 ring-1 ring-body hover:underline hover:text-primary-500   ">
+						<a href="<?php the_permalink();?>" class=" flex leading-5 sm:leading-6 mb-4 border border-body hover:underline hover:text-primary-500   ">
 							<?php if(thumbnail_image_url('full')){  ?> 
                             <figure>
                                 <img  class="block object-cover object-top  h-[7rem] sm:h-[9rem] w-[7rem] sm:w-[9rem] p-1 "  src="<?php echo thumbnail_image_url('full'); ?>" alt="<?=the_title();?>">

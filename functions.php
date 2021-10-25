@@ -59,20 +59,18 @@ function zgwd_dequeue_styles() {
  
 
 
+
+/* Modify comements - START */
 add_filter('comment_form_default_fields', 'unset_url_field');
 function unset_url_field($fields){
     if(isset($fields['url']))
        unset($fields['url']);
        return $fields;
-}
-
-
-
+} 
 
 function ldm_modify_comment_fields( $fields ) {
-	
-	//Variables necesarias para que esto funcione
-        $commenter = wp_get_current_commenter();
+	 
+   $commenter = wp_get_current_commenter();
 	$req = get_option( 'require_name_email' );
 	$aria_req = ( $req ? " aria-required='true'" : '' );
 
@@ -81,16 +79,14 @@ function ldm_modify_comment_fields( $fields ) {
       'email' =>'<p class="comment-form-email"><label for="email">Email (No será publicado) (*) <span class="required">(*)</span></label> <input id="email" name="email" type="email" value="" ' . esc_attr(  $commenter['comment_author_email'] ) .' size="30" ' . $aria_req . ' maxlength="100" required="required"></p>', 
 	); 
 	
-	return $fields;
-	
+	return $fields; 
 }
 
 add_filter('comment_form_default_fields', 'ldm_modify_comment_fields');
-
+/* Modify comements - END */
 
  
-
-/* css: agendasemanal */
+/* Add assets in page agendasemanal - START */ 
 function add_theme_scripts() {
     if (is_singular( array( 'agendasemanal' ) )) {
 
@@ -109,16 +105,14 @@ function add_theme_scripts() {
         wp_enqueue_style( 'style2_agenda' );
         wp_enqueue_style( 'style3_agenda' );
         wp_enqueue_style( 'style3_gif' );
-        wp_enqueue_style( 'style_agenda' );
-
-       /*  wp_enqueue_style( 'style', get_stylesheet_uri() ); 
-				wp_enqueue_style( 'app', get_template_directory_uri() . '/build/css/app.css', array(), '1.1', 'all');  */
-    }  
+        wp_enqueue_style( 'style_agenda' ); 
+     }  
 } 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );  
-
+/* Add assets in page agendasemanal - END */
  
-/* if (!is_page( array( 'quienes-somos' ) )) { */
+ 
+/* Load more posts - START */
  
 wp_register_script( 'app', get_template_directory_uri() . '/build/js/app.js');
 wp_enqueue_script( 'app' ); 
@@ -129,9 +123,5 @@ wp_localize_script( 'app', 'ajax_posts', array(
 ));
 require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';  
 
-    
-        
-/* } */
-
-
-
+ 
+/* Load more posts - END */
