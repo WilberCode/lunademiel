@@ -147,15 +147,49 @@ get_header();?>
             </div>
             <div class="mt-10 w-full "> 
                 <!-- Home - Full - Footer -->
+               <!--  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
+     crossorigin="anonymous"></script>
                 <ins class="adsbygoogle"
-                    style="display:block"
+                    style="display:block; width:100%; "
                     data-ad-client="ca-pub-2072313038095874"
                     data-ad-slot="3701807524"
                     data-ad-format="auto"
                     data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+                </script> -->
+              <div  class="grid grid-cols-1 xl1:grid-cols-3 gap-6 ">
+                    <div > 
+                        <!-- Home - as post 1 -->
+                        <ins class="adsbygoogle"
+                            style="display:inline-block;width:272px;height:272px"
+                            data-ad-client="ca-pub-2072313038095874"
+                            data-ad-slot="5629535661"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <div class=" hidden xl1:flex  " > 
+                        <!-- Home - as post 1 -->
+                        <ins class="adsbygoogle"
+                            style="display:inline-block;width:272px;height:272px"
+                            data-ad-client="ca-pub-2072313038095874"
+                            data-ad-slot="6256221624"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <div class=" hidden xl1:flex  " > 
+                        <!-- Home - as post 1 -->
+                        <ins class="adsbygoogle"
+                            style="display:inline-block;width:272px;height:272px"
+                            data-ad-client="ca-pub-2072313038095874"
+                            data-ad-slot="8852850407"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+              </div>
             </div> 
         </section> 
     </main>
