@@ -158,8 +158,8 @@ get_header();?>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script> -->
-              <div  class="grid grid-cols-1 xl1:grid-cols-3 gap-6 ">
-                    <div > 
+              <div  class="grid grid-cols-1 xl1:grid-cols-3 gap-6 content-center ">
+                    <div class="flex justify-center" > 
                         <!-- Home - as post 1 -->
                         <ins class="adsbygoogle"
                             style="display:inline-block;width:272px;height:272px"
