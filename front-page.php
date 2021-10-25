@@ -25,7 +25,7 @@ get_header();?>
                       (adsbygoogle = window.adsbygoogle || []).push({});
                   </script>
         </div>  
-        <div class="w-full  block xl1:hidden my-4 h-auto  " > 
+        <div class="w-full  block xl1:hidden mb-4 h-auto  " > 
         <!-- Home - Sidebar Left -->
             <ins class="adsbygoogle" 
                 style="display:inline-block;width:100%;height:auto"
@@ -146,19 +146,18 @@ get_header();?>
                 <?php echo do_shortcode('[ldm_post category="viajes" ]'); ?>        
             </div>
             <div class="mt-10 w-full "> 
-                <!-- Home - Footer- Responsive -->
+                <!-- Home - Full - Footer -->
                 <ins class="adsbygoogle"
                     style="display:block"
                     data-ad-client="ca-pub-2072313038095874"
-                    data-ad-slot="4365026586"
+                    data-ad-slot="3701807524"
                     data-ad-format="auto"
                     data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div> 
-        </section>
-        <?php 	 ?>
+        </section> 
     </main>
 </section>
   
