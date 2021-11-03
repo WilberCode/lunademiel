@@ -12,8 +12,11 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
  
     <!-- Facebook Pixel Code -->
     <script>
+        
     window.onload = function(){
-        !function(f,b,e,v,n,t,s)
+
+        setTimeout(function(){ 
+            !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -23,23 +26,28 @@ restaurantes románticos, tendencias de boda, celebridades, catering, bares y ca
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '2347629658600209'); 
         fbq('track', 'PageView');
+
+          },3000)
+        
     }
     </script>
 
     <script type='text/javascript'>
         window.onload = function(){
-            var googletag = googletag || {};
-            googletag.cmd = googletag.cmd || [];
-            (function() {
-                var gads = document.createElement('script');
-                gads.async = true;
-                gads.type = 'text/javascript';
-                var useSSL = 'https:' == document.location.protocol;
-                gads.src = (useSSL ? 'https:' : 'http:') +
-                '//www.googletagservices.com/tag/js/gpt.js';
-                var node = document.getElementsByTagName('script')[0];
-                node.parentNode.insertBefore(gads, node);
-            })();
+        setTimeout(function(){
+                var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+                (function() {
+                    var gads = document.createElement('script');
+                    gads.async = true;
+                    gads.type = 'text/javascript';
+                    var useSSL = 'https:' == document.location.protocol;
+                    gads.src = (useSSL ? 'https:' : 'http:') +
+                    '//www.googletagservices.com/tag/js/gpt.js';
+                    var node = document.getElementsByTagName('script')[0];
+                    node.parentNode.insertBefore(gads, node);
+                })();
+            },3000)
         }
     </script>
 
