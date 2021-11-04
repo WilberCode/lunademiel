@@ -111,7 +111,7 @@ function wph_front_widgets(){
 		'before_title' => '<h2 class="hidden">',
         'after_title'  => '</h2>'
     ));   */ 
-    register_sidebar(array(
+ /*    register_sidebar(array(
         'name' => __('Home - Banner principal'),
         'id' =>'home-banner',
         'description'   => 'banner principal',
@@ -155,7 +155,7 @@ function wph_front_widgets(){
 		'after_widget'  => '</div>', 
 		'before_title' => '<h2 class="hidden">',
         'after_title'  => '</h2>'
-    ));   
+    ));    */
   
 }
 add_action('widgets_init', 'wph_front_widgets');
