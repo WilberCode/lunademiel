@@ -178,9 +178,7 @@ get_header();?>
                         <script>
                             (adsbygoogle = window.adsbygoogle || []).push({});
                         </script>
-                    </div>
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
-     crossorigin="anonymous"></script>
+                    </div> 
                     <div class=" hidden xl1:flex  " > 
                        <!-- Home - as post 3 -->
                         <ins class="adsbygoogle"
