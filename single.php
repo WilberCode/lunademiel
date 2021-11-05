@@ -68,7 +68,7 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
                 data-full-width-responsive="true"></ins> 
                 <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>  
+                </script>  
             </div> 
             <div class="mb-8"> 
                 <h2  class="text-[24px]" >Los más recientes</h2>
@@ -120,6 +120,18 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
             </div>   
 
             <?php   dynamic_sidebar("single-sidebar");?>
+            <div  class="w-full mb-4 " > 
+              <!-- Post - Sidebar 2 -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-2072313038095874"
+                    data-ad-slot="6355891021"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div> 
         </sidebar> 
       </div>
   </div>
