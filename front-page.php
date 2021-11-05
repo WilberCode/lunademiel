@@ -170,7 +170,7 @@ get_header();?>
                         </script>
                     </div>
                     <div class=" hidden xl1:flex  " > 
-                        <!-- Home - as post 1 -->
+                        <!-- Home - as post 2 -->
                         <ins class="adsbygoogle"
                             style="display:inline-block;width:272px;height:272px"
                             data-ad-client="ca-pub-2072313038095874"
@@ -179,8 +179,10 @@ get_header();?>
                             (adsbygoogle = window.adsbygoogle || []).push({});
                         </script>
                     </div>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072313038095874"
+     crossorigin="anonymous"></script>
                     <div class=" hidden xl1:flex  " > 
-                        <!-- Home - as post 1 -->
+                       <!-- Home - as post 3 -->
                         <ins class="adsbygoogle"
                             style="display:inline-block;width:272px;height:272px"
                             data-ad-client="ca-pub-2072313038095874"
