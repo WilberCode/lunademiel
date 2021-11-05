@@ -120,7 +120,7 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
             </div>   
 
             <?php   dynamic_sidebar("single-sidebar");?>
-            <div  class="w-full mb-4 " > 
+            <div  class="w-full mb-4 mt-4" > 
               <!-- Post - Sidebar 2 -->
                 <ins class="adsbygoogle"
                     style="display:block"
