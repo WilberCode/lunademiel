@@ -87,10 +87,13 @@ add_filter('comment_form_default_fields', 'ldm_modify_comment_fields');
 
  
 /* Add assets in page agendasemanal - START */ 
+
+ 
 function add_theme_scripts() {
     if (is_singular( array( 'agendasemanal' ) )) {
 
         wp_register_script( 'script_agenda',  'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', [], false, true );
+        wp_register_script( 'script_owl', get_template_directory_uri().'/build/js/owlCarousel.js', [], false, true );
       
         wp_register_style( 'style1_agenda', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', [], false ); 
         wp_register_style( 'style2_agenda', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', [], false ); 
@@ -101,6 +104,7 @@ function add_theme_scripts() {
 
 
         wp_enqueue_script( 'script_agenda' );
+        wp_enqueue_script( 'script_owl' ); 
         wp_enqueue_style( 'style1_agenda' );
         wp_enqueue_style( 'style2_agenda' );
         wp_enqueue_style( 'style3_agenda' );
@@ -125,3 +129,6 @@ require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';
 
  
 /* Load more posts - END */
+ 
+ 
+ 

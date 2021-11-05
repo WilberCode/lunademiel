@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/font-agenda.css": "/css/font-agenda.css",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/js/owlCarousel.js": "/js/owlCarousel.js"
 }
