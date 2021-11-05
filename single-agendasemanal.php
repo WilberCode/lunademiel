@@ -4,8 +4,8 @@ $number_og = 1;
 $number_single = 1;
  
  ?>
-
-<div class=" "> 
+   
+ 
   <section class="agenda max-w-[980px]  m-auto "> 
    		<div  class=" flex flex-col md:flex-row justify-between px-4 lg:px-0" >
 			<div class=" flex justify-between md:block" >
@@ -145,42 +145,14 @@ $number_single = 1;
 
 		</div>
 		<div class="flex items-center space-x-8  mt-6" >
-			<a href="http://www.lunademiel.com.pe/contacto/" class="block"  target="_self">
+			<a href="<?=get_home_url().'/contacto/' ?>" class="block"  target="_self">
 				<img src="<?=get_stylesheet_directory_uri().'/build/svg/email-white.svg'?>" alt="Correo" class=" min-w-[35px]   sm:w-[48px]  "></a>
 			<div>Si tienes algún producto o servicio para <br class="hidden-xs" > parejas. ¡escribenos!</div>
 		</div>
 		</div>
 		</div>
     </div>
-  </footer>
-  </div>
-    
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-	  <script>
- $('.owl-carousel').owlCarousel({
-	loop:true,
-	margin:18,
-	nav:true,  
-	navText: [
-		"<i class='fa fa-caret-left agenda-carousel__icon'></i>",
-		"<i class='fa fa-caret-right agenda-carousel__icon'></i>"
-	],
-	responsive:{
-		0:{
-			items:2
-		},
-		600:{
-			items:3
-		},
-		1000:{
-			items:5
-		}
-	}
-	})
- 
-</script>
-</body>
-</html>  -->
+  </footer> 
+  
 
 <?php  get_footer(); ?>
