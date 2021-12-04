@@ -1,13 +1,13 @@
-<?php
+<?php 
 function more_post_ajax(){ 
     $ppp = (isset($_POST["ppp"])) ? $_POST["ppp"] : 3;
     $page = (isset($_POST['pageNumber'])) ? $_POST['pageNumber'] : 0;
-    $slug_name = (isset($_POST['current_slug'])) ? $_POST['current_slug'] : 'post';
+     $slug_name = (isset($_POST['current_slug'])) ? $_POST['current_slug'] : 'post';
 
     header("Content-Type: text/html");
 
     $args = array(
-        //'suppress_filters' => true,
+        'suppress_filters' => true,
         'post_type' => $slug_name,
 		'orderby' => 'date',
 		'order' => 'desc',

@@ -3,10 +3,19 @@ get_header();
 
 global $wp;
 $current_slug = add_query_arg( array(), $wp->request ); 
+  
  /* 
 $slug_name = $current_slug; */
 ?> 
 
+
+
+<!-- <pre>
+	<code>
+	<?php //echo $wp->query_vars ; ?>
+	</code>
+</pre>
+ -->
  
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<main class="main">

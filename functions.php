@@ -95,13 +95,8 @@ function add_theme_scripts() {
         wp_register_script( 'script_agenda',  'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', [], false, true );
         wp_register_script( 'script_owl', get_template_directory_uri().'/build/js/owlCarousel.js', [], false, true );
       
-        wp_register_style( 'style1_agenda', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', [], false ); 
-        wp_register_style( 'style2_agenda', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', [], false ); 
-        wp_register_style( 'style3_agenda', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css', [], false ); 
-        wp_register_style( 'style3_gif', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif', [], false );  
+       wp_register_style( 'style3_gif', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif', [], false );  
         wp_register_style( 'style_agenda', get_template_directory_uri().'/build/css/font-agenda.css', [], '1.1', 'all' ); 
-
-
 
         wp_enqueue_script( 'script_agenda' );
         wp_enqueue_script( 'script_owl' ); 
@@ -117,17 +112,32 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
  
  
 /* Load more posts - START */
- 
-wp_register_script( 'app', get_template_directory_uri() . '/build/js/app.js');
-wp_enqueue_script( 'app' ); 
 
-wp_localize_script( 'app', 'ajax_posts', array(
-    'ajaxurl' => admin_url( 'admin-ajax.php' ),
-    'noposts' => __('No older posts found', 'ldm'),
-));
+function ldm_load_more_scripts() {
+ 
+        global $wp_query; 
+        global $wp;
+        $current_slug = add_query_arg( array(), $wp->request ); 
+        $total_posts = wp_count_posts( $post_type = $current_slug  ); 
+        wp_register_script( 'app', get_template_directory_uri() . '/build/js/app.js');
+        wp_enqueue_script( 'app' ); 
+
+        wp_localize_script( 'app', 'ajax_posts', array(
+            'ajaxurl' => admin_url( 'admin-ajax.php' ),
+            'posts' => json_encode( $wp_query->query_vars ),  
+            'total_posts' => $total_posts, 
+            'noposts' => __('No older posts found', 'ldm'),
+        ));
+
+
+        wp_enqueue_script( 'ajax_posts' );
+ 
+ 
+}
+ 
+add_action( 'wp_enqueue_scripts', 'ldm_load_more_scripts' );
+ 
 require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';  
-
- 
 /* Load more posts - END */
  
  
