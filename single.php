@@ -57,7 +57,7 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
                 <?php  comments_template(); ?>  
             </section>
         </main> 
-        <sidebar class="mx-auto w-full max-w-[320px] single-sidebar-wrap ">
+        <aside class="mx-auto w-full max-w-[320px] single-sidebar-wrap ">
             <div  class="w-full mb-4 " > 
                 <!-- Post -  Sidebar  -->
                 <ins class="adsbygoogle"
@@ -132,7 +132,7 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div> 
-        </sidebar> 
+          </aside> 
       </div>
   </div>
 </div> 
