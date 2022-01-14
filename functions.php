@@ -95,7 +95,11 @@ function add_theme_scripts() {
         wp_register_script( 'script_agenda',  'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', [], false, true );
         wp_register_script( 'script_owl', get_template_directory_uri().'/build/js/owlCarousel.js', [], false, true );
       
-       wp_register_style( 'style3_gif', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif', [], false );  
+        wp_register_style( 'style1_agenda', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', [], false ); 
+        wp_register_style( 'style2_agenda', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', [], false ); 
+        wp_register_style( 'style3_agenda', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css', [], false );  
+
+        wp_register_style( 'style3_gif', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif', [], false );  
         wp_register_style( 'style_agenda', get_template_directory_uri().'/build/css/font-agenda.css', [], '1.1', 'all' ); 
 
         wp_enqueue_script( 'script_agenda' );
