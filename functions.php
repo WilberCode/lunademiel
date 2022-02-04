@@ -14,6 +14,16 @@ use WpTailwindCssThemeBoilerplate\View;
  * i.e; If a class named SomeClass is stored in app/SomeDir/SomeClass.php, there is no need to include/require that file
  * as the autoloader will handle that for you.
  */
+
+
+ /* THUMBNAIL URL - START */
+
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+function wpdocs_theme_setup() { 
+    add_image_size( 'img-listing', 300, 300, true ); // (cropped)
+}
+
+
 require get_stylesheet_directory() . '/app/AutoLoader.php';
 require get_stylesheet_directory() . '/inc/widgets.php'; 
 require get_stylesheet_directory() . '/inc/shortcodes.php'; 
@@ -114,7 +124,9 @@ function add_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );  
 /* Add assets in page agendasemanal - END */
  
+
  
+
 /* Load more posts - START */
 
 function ldm_load_more_scripts() {
