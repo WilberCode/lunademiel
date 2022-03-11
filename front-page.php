@@ -161,33 +161,33 @@ get_header();?>
               <div  class="grid grid-cols-1 xl1:grid-cols-3 gap-6 content-center ">
                     <div class="flex justify-center" > 
                         <!-- Home - as post 1 -->
-                       <!--  <ins class="adsbygoogle"
+                        <ins class="adsbygoogle"
                             style="display:inline-block;width:272px;height:272px"
                             data-ad-client="ca-pub-2072313038095874"
                             data-ad-slot="5629535661"></ins>
                         <script>
                             (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script> -->
+                        </script>
                     </div>
                     <div class=" hidden xl1:flex  " > 
                         <!-- Home - as post 2 -->
-                       <!--  <ins class="adsbygoogle"
+                        <ins class="adsbygoogle"
                             style="display:inline-block;width:272px;height:272px"
                             data-ad-client="ca-pub-2072313038095874"
                             data-ad-slot="6256221624"></ins>
                         <script>
                             (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script> -->
+                        </script>
                     </div> 
                     <div class=" hidden xl1:flex  " > 
                        <!-- Home - as post 3 -->
-                     <!--    <ins class="adsbygoogle"
-                            style="display:inline-block;width:272px;height:272px"
+                        <ins class="adsbygoogle"
+                            style="display:inline-block;width:272px;height:272px"  
                             data-ad-client="ca-pub-2072313038095874"
                             data-ad-slot="8852850407"></ins>
                         <script>
                             (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script> -->
+                        </script>
                     </div>
               </div>
             </div> 
