@@ -73,6 +73,7 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
             <div class="mb-8"> 
                 <h2  class="text-[24px]" >Los más recientes</h2>
                 <div class="new card-thumbnail " >
+                     
                 <?php
                         global $post,$categoria; 
                         //query subpages
@@ -89,9 +90,10 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
                         // create output
                         if ($listing->have_posts()) :
                             while ($listing->have_posts()) : $listing->the_post();
-                                $arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-sidebar');
-                                if ( $arr_image[0] != '' ) :
-                                    $imagethumb = $arr_image[0];
+                              //  $arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'img-sidebar');
+                                $arr_image = thumbnail_image_url('img-sidebar');  
+                                if ( $arr_image != '' ) :
+                                    $imagethumb = $arr_image;
                                 else :
                                     $imagethumb = get_template_directory_uri()."/build/img/thumb-default.jpg";
                                 endif;
