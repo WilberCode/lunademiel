@@ -21,6 +21,7 @@ use WpTailwindCssThemeBoilerplate\View;
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() { 
     add_image_size( 'img-listing', 300, 300, true ); // (cropped)
+    add_image_size( 'img-sidebar', 80, 80, true ); // (cropped)
 }
 
 
