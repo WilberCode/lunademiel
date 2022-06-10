@@ -45,7 +45,7 @@ $number_single = 1;
 				if( is_wp_error( $term_link ) )
 					continue; 
 						?>
-					<a href="<?php $term_link; ?>"> <?php if($number > 1){ echo "& "; }else{ echo ' ';}?><?php echo $term->name; ?> </a> 
+					<a href="<?php echo $term_link; ?>"> <?php if($number > 1){ echo "& "; }else{ echo ' ';}?><?php echo $term->name; ?> </a> 
 			<?php 
 				$number++;
 			} 

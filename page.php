@@ -66,7 +66,7 @@ $slug_name = $current_slug; */
 			</div> 
 				<?php if($post_type_exist){ ?> 
 					<div class="text-center">
-						<button id="more_posts" class="btn">Ver todos los artículos</button> 
+						<button id="more_posts" class="btn">Ver más articulos</button> 
 					</div> 
 				<?php } ?>
 			 
