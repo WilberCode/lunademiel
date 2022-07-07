@@ -145,7 +145,7 @@
 								 
 
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none" >
-								<img src="<?php if(thumbnail_image_url('full')){echo  thumbnail_image_url('full');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
+								<img src="<?php if(thumbnail_image_url('agenda-thumbnail')){echo  thumbnail_image_url('agenda-thumbnail');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
 								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo;font-family:Prelo-SemiBold; color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;<?php
 
 							 	if($first_number == 1 ){ echo 'padding-right: 10px!important;'; } else if($first_number == 3){ echo 'padding-left: 10px!important;';}else{echo '';}
