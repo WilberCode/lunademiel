@@ -116,7 +116,7 @@
 					'post_type' => 'agendasemanal',
 					'orderby' => 'date',
 					'order' => 'desc',
-					'post_status' => 'publish',
+					/* 'post_status' => 'publish', */
 					'posts_per_page' => 3
 					);
 					$first_number = 1; 
@@ -191,7 +191,7 @@
 					'post_type' => 'agendasemanal',
 					'orderby' => 'date',
 					'order' => 'desc',
-					'post_status' => 'publish',  
+/* 					'post_status' => 'publish', */  
 					'posts_per_page' => 2,
 					'offset' => 3
 					);
