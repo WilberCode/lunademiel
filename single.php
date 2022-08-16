@@ -15,7 +15,10 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
             <div class="entry">
                 <?php the_content(); ?>
             </div>  
-            <section class="mt-3">
+            <section class="mt-4" >
+                <?php  comments_template(); ?>  
+            </section>
+            <section class="mt-5">
             <h2 class="text-2xl" >También te puede interesar:</h2>
             <div class="interest card-thumbnail grid grid-cols-2 sm:grid-cols-4 gap-4 mt-3">
                 <?php
@@ -53,9 +56,7 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
                 ?>
             </div>
             </section>	
-            <section class="mt-8" >
-                <?php  comments_template(); ?>  
-            </section>
+            
         </main> 
         <aside class="mx-auto w-full max-w-[320px] single-sidebar-wrap ">
             <div  class="w-full mb-4 " > 
@@ -99,13 +100,13 @@ if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the
                                 endif;
                                 
                                 $terms = wp_get_post_terms( $listing->post->ID, array( 'catarticulos' ) ); 
-                                
-                                $categoria = $terms[0]->name;?> 
-                                    <a   href="<?=get_permalink()?>">
+                                ?>  
+
+                                    <a   href="<?php echo get_permalink()?>">
                                         <figure ><img src="<?=$imagethumb?>" alt="<?=get_the_title()?>"/></figure>
                                         <section>
-                                            <?php if ($categoria):?>
-                                             <p><?=$categoria?></p>
+                                            <?php if (isset($terms[0]->name)):?>
+                                             <p><?=$terms[0]->name?></p>
                                             <?php endif; ?> 
                                             <h3>
                                                 <?=get_the_title()?>

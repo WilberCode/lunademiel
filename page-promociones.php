@@ -38,7 +38,9 @@ get_header();
 						<ul class="tab" id="tab">
 							<?php foreach ($promolist as $promo) {	?>
 							<li>
-								<a  class="<?php if($_GET['slug_name'] == $promo->slug ){ echo "active"; }?>"  href="<?=home_url(); ?>/<?php echo $promo->taxonomy; ?>/<?php echo $promo->slug; ?>/"><?php echo $promo->name; ?><span><?php echo $promo->count; ?></span>
+								<a  class="<?php if(isset($_GET["slug_name"]) == $promo->slug ){ echo "active"; }?>"  href="<?php echo get_home_url()?>/<?php echo $promo->taxonomy; ?>/<?php echo $promo->slug; ?>/">
+									<?php echo $promo->name; ?>
+									<span><?php echo $promo->count; ?></span>
 								</a>
 							</li>
 							<?php } ?>				      

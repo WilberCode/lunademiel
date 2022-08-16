@@ -7,7 +7,7 @@ function get_post_infront($category=''){
  
 	$post_image = '';
 	$post_link = '';
-	 
+	$post_category_image = '';
 	$args = array(
 	'post_type' =>  $category,
 	'orderby' => 'date',
@@ -38,7 +38,7 @@ function get_post_infront($category=''){
 		$countt ++;
 	endwhile;  
 
- 	$post_category_image .= '<a class="uppercase  block hover:underline" href="'.home_url( $wp->request ).'/'.$post_link.'" >'. $post_image.'<h2  class="mt-4 sm:text-[20px]" >'.$post_title .'</h2> </a> ';
+ 	$post_category_image .= '<a class="uppercase  block hover:underline" href="'.get_home_url().'/'.$post_link.'" >'. $post_image.'<h2  class="mt-4 sm:text-[20px]" >'.$post_title .'</h2> </a> ';
  
 	$posts_link =  ''; 
 
