@@ -70,6 +70,12 @@
 		}	  
 
 	 </style>
+	 <script>
+		function redirect(){
+			window.location.replace('https://www.lunademiel.com.pe/agenda/eventos-musica/');
+		}
+		redirect()
+	 </script>
 </head>
 
 <body >
