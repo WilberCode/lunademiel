@@ -145,7 +145,7 @@
 								 
 
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none" >
-								<img src="<?php if(thumbnail_image_url('agenda-thumbnail')){echo  thumbnail_image_url('agenda-thumbnail');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
+								<img class="agenda-img" src="<?php if(thumbnail_image_url('agenda-thumbnail')){echo  thumbnail_image_url('agenda-thumbnail');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
 								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo;font-family:Prelo-SemiBold; color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;<?php
 
 							 	if($first_number == 1 ){ echo 'padding-right: 10px!important;'; } else if($first_number == 3){ echo 'padding-left: 10px!important;';}else{echo '';}
@@ -218,7 +218,7 @@
 
 							 ?>" style="border-collapse:collapse;" valign="top" >
 								<a href="<?php the_permalink();?>" style="color:black;text-decoration:none"  >
-								<img src="<?php if(thumbnail_image_url('full')){echo  thumbnail_image_url('full');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
+								<img class="agenda-img" src="<?php if(thumbnail_image_url('full')){echo  thumbnail_image_url('full');}else{echo  get_template_directory_uri()."/_/images/thumb-default.jpg"; } ?>" alt="<?php the_title(); ?>" width="190" height="260">
 								<p width="200" style="margin:0;padding:0;margin-bottom:0;font-family:Prelo ;font-family:Prelo-SemiBold; color:#eb3d82;font-size:14px;padding:3px 0;text-align:center;
 								<?php if($second_number == 1 ){ echo 'padding-right: 10px!important;'; }else{echo '';} ?>"> 
 								- <?php if($terms_slugs_string !== "" ) { echo $terms_slugs_string;} else { echo "actividades";} ?> -
@@ -240,7 +240,7 @@
 				  ?>	
 				   <td width="200" align="right" valign="top" style="border-collapse:collapse;border-collapse:collapse;border:none" cellpadding="0" cellspacing="0">
 						<a href="https://www.lunademiel.com.pe/proveedores/" style="color:black;text-decoration:none"   >
-						<img src="https://www.lunademiel.com.pe/wp-content/uploads/2021/05/Buscando-Proveedores-aqui.jpg" width="195" height="auto" style="border:0;display:block" alt="¿Buscando proveedores?" >
+						<img class="agenda-img" src="https://www.lunademiel.com.pe/wp-content/uploads/2021/05/Buscando-Proveedores-aqui.jpg" width="195" height="auto" style="border:0;display:block" alt="¿Buscando proveedores?" >
 						</a>
 					</td>
 				</tr>
