@@ -36,7 +36,7 @@ $current_slug = add_query_arg( array(), $wp->request );
 						</div>
 						</div> 
 					<div class="px-0 lg:px-4 tab-wrap" id="tab-wrap">
-						<ul class="tab" id="tab">
+						<ul class="tab flex-wrap " id="tab">
 							<?php 
 							if ( get_post_type( get_the_ID() ) == 'promociones') {
 							$promolist = get_terms( 'promocion', array('orderby'=>'count','order'=>'desc') );?>
