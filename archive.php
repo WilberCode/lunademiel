@@ -52,7 +52,7 @@ $current_slug = add_query_arg( array(), $wp->request );
 							$agendalist = get_terms( 'agenda', array('orderby'=>'count','order'=>'desc') );?>
 							<?php foreach ($agendalist as $agenda) {?>
 								<li>
-									<a  class="<?php if($current_slug == 'agenda/'.$agenda->slug ){ echo "active"; }?>"    href="<?=home_url(); ?>/<?php echo $agenda->taxonomy; ?>/<?php echo $agenda->slug; ?>/"><?php echo $agenda->name; ?><span><?php echo $agenda->count; ?></span>
+									<a  class="<?php if($current_slug == 'agenda/'.$agenda->slug ){ echo "active"; }?>"    href="<?=home_url(); ?>/<?php echo $agenda->taxonomy; ?>/<?php echo $agenda->slug; ?>/"><?php echo ucfirst($agenda->name);?><span><?php echo $agenda->count; ?></span>
 									</a>
 								</li>
 							<?php }} ?>	 
