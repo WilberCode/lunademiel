@@ -39,7 +39,7 @@ get_header();
 							<?php foreach ($agendalist as $agenda) {	?>
 								<?php if($agenda->count > 0){ ?>
 									<li>
-										<a  class="<?php if(isset($_GET["slug_name"]) == $agenda->slug ){ echo "active"; }?>"  href="<?php echo get_home_url()?>/<?php echo $agenda->taxonomy; ?>/<?php echo $agenda->slug; ?>/">
+										<a class="first-letter:uppercase "  class="<?php if(isset($_GET["slug_name"]) == $agenda->slug ){ echo "active"; }?>"  href="<?php echo get_home_url()?>/<?php echo $agenda->taxonomy; ?>/<?php echo $agenda->slug; ?>/">
 											<?php echo $agenda->name; ?>
 											<span><?php echo $agenda->count; ?></span>
 										</a>
