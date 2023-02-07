@@ -89,7 +89,7 @@ get_header();
 					</div>
 				</div>
 			</div>  
-			<div class="text-center hidden">
+			<div class="text-center hidden ">
 				<button id="more_posts" class="btn">Ver más agendas</button> 
 			</div>  
 		</div>
