@@ -67,7 +67,7 @@ $number_single = 1;
 				wp_reset_postdata();
 		?> 
 	</div>  	
-	<div  class="flex justify-center items-center mb-8 space-x-3 " >
+	<div  class="flex justify-center items-center mt-8 mb-8 space-x-3 " >
 		Volver a 
 		<a href="<?php echo home_url(); ?>" class="mx-4" >
 			<img class="w-[26px]" src="<?php echo  get_bloginfo('template_directory').'/build/svg/home.svg'; ?>" alt="Home">
