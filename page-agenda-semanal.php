@@ -37,12 +37,14 @@ get_header();
 					<div class="px-0 lg:px-4 tab-wrap" id="tab-wrap">
 						<ul class="tab flex-wrap" id="tab">
 							<?php foreach ($agendalist as $agenda) {	?>
-							<li>
-								<a  class="<?php if(isset($_GET["slug_name"]) == $agenda->slug ){ echo "active"; }?>"  href="<?php echo get_home_url()?>/<?php echo $agenda->taxonomy; ?>/<?php echo $agenda->slug; ?>/">
-									<?php echo $agenda->name; ?>
-									<span><?php echo $agenda->count; ?></span>
-								</a>
-							</li>
+								<?php if($agenda->count > 0){ ?>
+									<li>
+										<a  class="<?php if(isset($_GET["slug_name"]) == $agenda->slug ){ echo "active"; }?>"  href="<?php echo get_home_url()?>/<?php echo $agenda->taxonomy; ?>/<?php echo $agenda->slug; ?>/">
+											<?php echo $agenda->name; ?>
+											<span><?php echo $agenda->count; ?></span>
+										</a>
+									</li>
+							<?php  }  ?>
 							<?php } ?>				      
 				     	 </ul>
 				    </div>  
