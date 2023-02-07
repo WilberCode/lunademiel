@@ -10,7 +10,7 @@ $number_single = 1;
    		<div  class=" flex flex-col md:flex-row justify-between px-4 lg:px-0" >
 			<div class=" flex justify-between md:block" >
 				<a href="<?=get_home_url(); ?>" target="_self">
-					<img src="<?=get_stylesheet_directory_uri().'/build/svg/logo.svg'?>" alt="Luna de Miel agenda" class=" w-28  0 sm:w-[150px]">
+					<img src="https://www.lunademiel.com.pe/wp-content/uploads/2023/02/Luna-de-miel.svg" alt="Luna de Miel agenda" class=" w-28  0 sm:w-[150px]">
 				</a>
 				<div  class="inline-flex  md:hidden uppercase space-x-2  mt-4 " >
 					<span class="text-primary-500 font-bold font-prelo  text-lg " >ESPECIAL</span><span class="font-bold font-prelo" ><?php echo get_the_date( 'F' ); ?> ></span>
