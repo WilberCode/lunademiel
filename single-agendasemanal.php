@@ -67,7 +67,15 @@ $number_single = 1;
 				wp_reset_postdata();
 		?> 
 	</div>  	
+	<div  class="flex justify-center items-center mb-8 space-x-3 " >
+		Volver a 
+		<a href="<?php echo home_url(); ?>" class="mx-4" >
+			<img class="w-[26px]" src="<?php echo  get_bloginfo('template_directory').'/build/svg/home.svg'; ?>" alt="Home">
+		</a>
+			/ <a href="<?php echo home_url(); ?>/agenda-semanal"  class="hover:underline" >Agenda</a>
+	</div>
 	<div class="agenda-line ">&nbsp;</div>
+
 	<div  class="px-10 lg:px-0" >
 		<h2  class="agenda-carousel__title inline-flex " >Ver más publicaciones</h2> 
 		<div class="post owl-carousel agenda-carousel-wrap owl-theme card-thumbnail ">
