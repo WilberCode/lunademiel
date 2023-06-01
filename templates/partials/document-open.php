@@ -38,15 +38,14 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DC95B28BG"></script>
     <script>
-        window.onload = function(){
-            setTimeout(function(){
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
+       
+     setTimeout(function(){
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-                gtag('config', 'G-8DC95B28BG');
-        },3000);
-        }
+            gtag('config', 'G-8DC95B28BG');
+    },3000); 
     </script>
  
    <!-- Google Tag Manager -->
