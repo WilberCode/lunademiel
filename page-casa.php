@@ -1,3 +1,10 @@
+<?php
+  
+/*
+Template Name: Casa
+Template Post Type: post, page, event
+*/ 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
