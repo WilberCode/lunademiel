@@ -106,31 +106,31 @@ Template Post Type: post, page, event
 <body>
     <div class="container">
             <div class="landingtiendas">
-                <img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/LandingTiendas.jpg" alt="landing tiendas">
+                <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/LandingTiendas.jpg" alt="landing tiendas">
                 <a class="logo"href="<?=home_url();?>">Luna de miel</a>
             </div>
         <div class="social">
             <div class="social-item" id="lovely" >
-                <a class="social-item-link" href="https://www.instagram.com/lovelytabledesign/" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Lovely.jpg" alt="lovely table desing"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Facebook']);" href="https://www.instagram.com/lovelytabledesign/" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Instagram01.jpg" alt="lovely table desing"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Instagram']);" href="https://web.facebook.com/profile.php?id=100063798243118&_rdc=1&_rdr" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Facebook01.jpg" alt="lovely table desing"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51944045371&text=Hola" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Telefono01.jpg" alt="lovely table desing"></a>
+                <a class="social-item-link" href="https://www.instagram.com/lovelytabledesign/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Lovely.jpg" alt="lovely table desing"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Facebook']);" href="https://www.instagram.com/lovelytabledesign/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Instagram01.jpg" alt="lovely table desing"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Instagram']);" href="https://web.facebook.com/profile.php?id=100063798243118&_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Facebook01.jpg" alt="lovely table desing"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51944045371&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Telefono01.jpg" alt="lovely table desing"></a>
             </div>
             <div class="social-item" id="guit">
-                <a class="social-item-link" href="https://www.instagram.com/larimavila_home/" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/lari.jpg" alt="lari mavila"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Facebook']);"  href="https://www.instagram.com/larimavila_home/" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Instagram02.jpg" alt="lari mavila"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Instagram']);"  href="https://web.facebook.com/larimavilahome?_rdc=1&_rdr" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Facebook02.jpg" alt="lari mavila"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51999516321&text=Hola" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Telefono02.jpg" alt="lari mavila"></a>
+                <a class="social-item-link" href="https://www.instagram.com/larimavila_home/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/lari.jpg" alt="lari mavila"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Facebook']);"  href="https://www.instagram.com/larimavila_home/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Instagram02.jpg" alt="lari mavila"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Instagram']);"  href="https://web.facebook.com/larimavilahome?_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Facebook02.jpg" alt="lari mavila"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51999516321&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Telefono02.jpg" alt="lari mavila"></a>
             </div>
             <div class="social-item" id="larimavila">
-                <a class="social-item-link" href="https://www.instagram.com/guitshop/" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/guit.jpg" alt="guit shop"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Facebook']);" href="https://www.instagram.com/guitshop/" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Instagram03.jpg" alt="guit shop"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Instagram']);"  href="https://web.facebook.com/guitshop?_rdc=1&_rdr" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Facebook03.jpg" alt="guit shop"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51999669966&text=Hola" target="_blank"><img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Telefono03.jpg" alt="guit shop"></a>
+                <a class="social-item-link" href="https://www.instagram.com/guitshop/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/guit.jpg" alt="guit shop"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Facebook']);" href="https://www.instagram.com/guitshop/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Instagram03.jpg" alt="guit shop"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Instagram']);"  href="https://web.facebook.com/guitshop?_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Facebook03.jpg" alt="guit shop"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51999669966&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Telefono03.jpg" alt="guit shop"></a>
             </div>
         </div>
         <div class="landingtiendas-footer">
-            <img src="<?=home_url();?>/wp-content/themes/ldm/casaimages/LandingTiendas02.jpg" alt="landing tiendas">
+            <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/LandingTiendas02.jpg" alt="landing tiendas">
     </div>
     </div>
 </body>
