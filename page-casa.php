@@ -112,8 +112,8 @@ Template Post Type: post, page, event
         <div class="social">
             <div class="social-item" id="lovely" >
                 <a class="social-item-link" href="https://www.instagram.com/lovelytabledesign/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Lovely.jpg" alt="lovely table desing"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Instagram']);" href="https://www.instagram.com/lovelyhome.pe/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Instagram01.jpg?v=1" alt="lovely table desing"></a>
-                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Facebook']);" href="https://www.facebook.com/profile.php?id=100063798243118" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Facebook01.jpg?v=1" alt="lovely table desing"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Instagram']);" href="https://www.instagram.com/lovelyhome.pe/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Instagram01-1.jpg?v=1" alt="lovely table desing"></a>
+                <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Facebook']);" href="https://www.facebook.com/profile.php?id=100063798243118" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Facebook01-1.jpg?v=1" alt="lovely table desing"></a>
                 <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51944045371&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/casaimages/Telefono01.jpg" alt="lovely table desing"></a>
             </div>
             <div class="social-item" id="guit">
