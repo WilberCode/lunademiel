@@ -63,6 +63,7 @@ Template Post Type: post, page, event
             display:flex;
             align-items: center;
             justify-content: center;
+            padding-bottom:40px;
         }
    
     </style>
