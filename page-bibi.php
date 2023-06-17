@@ -72,7 +72,7 @@ Template Post Type: post, page, event
 <body>
     <div class="container">
         <div >
-            <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bibi/BibiValverde.jpg" alt="BibiValverde"> 
+            <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bibi/BibiValverde-02.jpg" alt="BibiValverde"> 
         </div>
         <div class="social-item" id="bibi" >
             <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Bibi valverde', 'Enlace Saliente', 'Instagram']);" href="https://www.instagram.com/valverdebibi/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bibi/instagram.jpg?v=1" alt="instagram"></a>
