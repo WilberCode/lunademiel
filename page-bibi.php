@@ -75,8 +75,8 @@ Template Post Type: post, page, event
             <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bibi/BibiValverde.jpg" alt="BibiValverde"> 
         </div>
         <div class="social-item" id="bibi" >
-            <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Bibi valverde', 'Enlace Saliente', 'Instagram']);" href="https://www.instagram.com/valverdebibi/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bibi/instagram.jpg?v=1" alt="lovely table desing"></a>
-            <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Bibi valverde', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51999121109&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bibi/whatsapp.jpg" alt="lovely table desing"></a>
+            <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Bibi valverde', 'Enlace Saliente', 'Instagram']);" href="https://www.instagram.com/valverdebibi/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bibi/instagram.jpg?v=1" alt="instagram"></a>
+            <a class="social-item-link" onclick="_gaq.push(['_trackEvent', 'Bibi valverde', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51999121109&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bibi/whatsapp.jpg" alt="whatsapp"></a>
        </div>
         
     </div>
