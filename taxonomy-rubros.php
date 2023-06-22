@@ -29,7 +29,7 @@ $imagethumb=null;
                                             'terms'    => $catId,
                                         ),
                                     ), 
-                        'orderby' => 'modify',
+                       /*  'orderby' => 'modify', */
                         'order' => 'desc',
                         'posts_per_page' => -1,
                         );
