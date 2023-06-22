@@ -62,8 +62,8 @@ $imagethumb=null;
 
                                     <div  class="h-[108px] mt-auto mb-[24px] px-[4px]" > 
                                         <?php if ($telefono) {?><dd><span class="hidden">Teléfono: </span><?php echo $telefono;?></dd><?php }?> 
-                                        <?php if ($instagram) {?><dd><span>FB: </span><?php echo $instagram;?></dd><?php }?> 
-                                        <?php if ($facebook ) {?><dd><span>IG: </span><?php echo $facebook ;?></dd><?php }?> 
+                                        <?php if ($facebook) {?><dd><span>FB: </span><?php echo $facebook;?></dd><?php }?> 
+                                        <?php if ($instagram) {?><dd><span>IG: </span><?php echo $instagram ;?></dd><?php }?> 
                                         
                                         <?php if ($sitio_web) {?><dd><span class="hidden">Sitio Web: </span> <?php echo $sitio_web;?> </dd><?php }?>
                                         
