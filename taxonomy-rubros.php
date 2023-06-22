@@ -55,12 +55,12 @@ $imagethumb=null;
                             <dl class="border border-[#333333] px-[12px] pt-[8px] pb-0 rounded-[12px] text-[#333333] font-semibold flex flex-col h-full" >
                                 <img class="rounded-[12px]" src="<?=$imagethumb?>" alt="<?=get_the_title()?>"  />  
                                 <!--< div  class="py-[22px] px-1  " > -->
-                                    <div  class="pt-[22px] pb-[26px]" >
+                                    <div  class="pt-[22px] pb-[26px] px-[4px]" >
                                         <dt  class=" text-lg sm:text-[25.68px] font-semibold text-primary-500 tracking-[0.20px] " ><?php echo get_the_title();?></dt>
-                                        <p  class=" " ><?php echo get_the_content();?></p>
+                                        <p  class="max-w-[429px]" ><?php echo get_the_content();?></p>
                                     </div>
 
-                                    <div  class="h-[108px] mt-auto mb-[18px]" > 
+                                    <div  class="h-[108px] mt-auto mb-[24px] px-[4px]" > 
                                         <?php if ($telefono) {?><dd><span class="hidden">Teléfono: </span><?php echo $telefono;?></dd><?php }?> 
                                         <?php if ($instagram) {?><dd><span>FB: </span><?php echo $instagram;?></dd><?php }?> 
                                         <?php if ($facebook ) {?><dd><span>IG: </span><?php echo $facebook ;?></dd><?php }?> 

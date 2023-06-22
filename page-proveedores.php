@@ -20,7 +20,7 @@ get_header();
 						$img_cat = get_metadata('term', $term->term_id, 'imagen', true );?> 
                         <a class="hover:underline" href="<?=home_url();?>/rubros/<?=$term->slug?>/">
                             <img class="inline-flex" src="<?=$img_cat['guid']; ?>" alt="<?=$term->name;?>" />
-                            <h2  class=" text-[18px] sm:text-[21.91px] text-left px-[5px] mt-[10px] w-full max-w-[125px]" ><?=$term->name; ?></h2>
+                            <h2  class=" text-[18px] sm:text-[21.91px] text-left px-[5px] mt-[10px] w-full max-w-[125px] leading-[1.2] " ><?=$term->name; ?></h2>
                         </a> 
 					<?php }?>
                 </div>
