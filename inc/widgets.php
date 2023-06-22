@@ -32,7 +32,8 @@ function wph_theme_support() {
 	// Add custom image size used in Cover Template.
 	add_image_size( 'wph-fullscreen', 1980, 9999 );
 	add_image_size( 'agenda-thumbnail', 190, 260, true ); // (cropped)
-
+	add_image_size( 'proveedores-thumbnail', 274, 283, true );
+	add_image_size( 'proveedores-single-thumbnail', 342, 239, true );
 	// Custom logo.
 	$logo_width  = 120;
 	$logo_height = 90;
