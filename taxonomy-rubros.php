@@ -3,13 +3,26 @@ get_header();
 global $wp;
 $current_slug = add_query_arg( array(), $wp->request );  
 $imagethumb=null;
+$catId = get_queried_object()->term_id; //capturo el ID del current term
 ?>  
 <main class="main">
     <div class="container">
         <div class="mb-8"> 
             <div class="mt-11 mb-8 w-full  ">
                 <?php edit_post_link(__('Editar esta entrada','html5reset'), '<span  class="page-edit" >', '</span>'); ?>
-                <h1  class=" text-[30px] maxsm:text-center sm:text-[40px] text-[#333333] leading-9  uppercase mb-4"><?php echo single_cat_title(''); ?></h1>
+                <?php   
+				 	$titulo_alternativo = get_term_meta( $catId , 'titulo_alternativo', true ); 
+                ?>
+                 <h1  class=" text-[30px] maxsm:text-center sm:text-[40px] text-[#333333] leading-9  uppercase mb-4">
+                    <?php if ($titulo_alternativo) {
+                             echo  $titulo_alternativo; 
+                          }else{   
+                            echo single_cat_title('');  
+                         }?>
+                </h1>
+              
+
+               <!--  <h1  class=" text-[30px] maxsm:text-center sm:text-[40px] text-[#333333] leading-9  uppercase mb-4"><?php //echo single_cat_title(''); ?></h1> -->
                 <div class=" text-[18px] sm:text-[20px]  ">	
                     <?php echo category_description(); ?>
                 </div>
@@ -18,7 +31,7 @@ $imagethumb=null;
                     <div> 	
                     <div  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  gap-4 sm:gap-[33px]  ">		
                     <?php 
-                        $catId = get_queried_object()->term_id; //capturo el ID del current term
+                      
                         
                         $args = array(
                         'post_type' => 'proveedores',
