@@ -56,8 +56,7 @@ $imagethumb=null;
                         endif;
                         ?>
                             <dl class="border border-[#333333] px-[12px] pt-[8px] pb-0 rounded-[12px] text-[#333333] font-semibold flex flex-col h-full" >
-                                <img class="rounded-[12px]" src="<?=$imagethumb?>" alt="<?=get_the_title()?>"  />  
-                                <!--< div  class="py-[22px] px-1  " > -->
+                                <img class="rounded-[12px]" src="<?=$imagethumb?>" alt="<?=get_the_title()?>"  />   
                                     <div  class="pt-[22px] pb-[26px] px-[4px]" >
                                         <dt  class=" text-lg sm:text-[25.68px] font-semibold text-primary-500 tracking-[0.20px] " ><?php echo get_the_title();?></dt>
                                         <p  class="max-w-[429px]" ><?php echo get_the_content();?></p>
@@ -65,15 +64,14 @@ $imagethumb=null;
 
                                     <div  class="h-[108px] mt-auto mb-[24px] px-[4px]" > 
                                         <?php if ($telefono) {?><dd><span class="hidden">Teléfono: </span><?php echo $telefono;?></dd><?php }?> 
-                                        <?php if ($facebook) {?><dd><span>FB: </span> <?php if ($facebook_enlace){?> <a class="hover:underline hover:bg-primary-500 "  target="_blank"  href="<?php echo $facebook_enlace;?>"><?php echo $facebook;?></a> <?php }else{ echo $facebook;} ?> </dd><?php }?> 
-                                        <?php if ($instagram) {?><dd><span>IG: </span><?php if ($instagram_enlace){?> <a class="hover:underline hover:bg-primary-500 "  target="_blank"  href="<?php echo $instagram_enlace;?>"><?php echo $instagram;?></a> <?php }else{ echo $instagram;} ?> </dd><?php }?> 
+                                        <?php if ($facebook) {?><dd><span>FB: </span> <?php if ($facebook_enlace){?> <a class="hover:underline hover:text-primary-500 "  target="_blank"  href="<?php echo $facebook_enlace;?>"><?php echo $facebook;?></a> <?php }else{ echo $facebook;} ?> </dd><?php }?> 
+                                        <?php if ($instagram) {?><dd><span>IG: </span><?php if ($instagram_enlace){?> <a class="hover:underline hover:text-primary-500 "  target="_blank"  href="<?php echo $instagram_enlace;?>"><?php echo $instagram;?></a> <?php }else{ echo $instagram;} ?> </dd><?php }?> 
                                         
-                                        <?php if ($sitio_web) {?><dd><span class="hidden">Sitio Web: </span><?php if ($sitio_web_enlace){?> <a class="hover:underline hover:bg-primary-500 "  target="_blank"  href="<?php echo $sitio_web_enlace;?>"><?php echo $sitio_web;?></a> <?php }else{ echo $instagram;} ?> </dd><?php }?>
+                                        <?php if ($sitio_web) {?><dd><span class="hidden">Sitio Web: </span><?php if ($sitio_web_enlace){?> <a class="hover:underline hover:text-primary-500 "  target="_blank"  href="<?php echo $sitio_web_enlace;?>"><?php echo $sitio_web;?></a> <?php }else{ echo $instagram;} ?> </dd><?php }?>
                                         
-                                        <?php if ($email) {?><dd><span class="hidden">Email: </span><a class="hover:underline hover:bg-primary-500 "  target="_blank" href="mailto:<?php echo $email;?>"><?php echo $email;?></a></dd><?php }?>
+                                        <?php if ($email) {?><dd><span class="hidden">Email: </span><a class="hover:underline hover:text-primary-500 "  target="_blank" href="mailto:<?php echo $email;?>"><?php echo $email;?></a></dd><?php }?>
                                      
-                                    </div>
-                              <!--   </div> -->
+                                    </div> 
                             </dl>
                     <?php endwhile; ?>
                     </div> 	
