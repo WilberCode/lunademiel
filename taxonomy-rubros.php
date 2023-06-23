@@ -70,7 +70,7 @@ $catId = get_queried_object()->term_id; //capturo el ID del current term
                         endif;
                         ?>
                             <dl class="border border-[#333333] px-[12px] pt-[8px] pb-0 rounded-[12px] text-[#333333] font-semibold flex flex-col h-full" >
-                                <img class="rounded-[12px]" src="<?=$imagethumb?>" alt="<?=get_the_title()?>"  />   
+                                <img class="rounded-[12px] proveedores-image" src="<?=$imagethumb?>" alt="<?=get_the_title()?>"  />   
                                     <div  class="pt-[22px] pb-[26px] px-[4px]" >
                                         <dt  class=" text-lg sm:text-[25.68px] font-semibold text-primary-500 tracking-[0.20px] " ><?php echo get_the_title();?></dt>
                                         <p  class="max-w-[429px]" ><?php echo get_the_content();?></p>
