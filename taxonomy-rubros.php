@@ -39,10 +39,13 @@ $imagethumb=null;
                         while ($listing->have_posts()) : $listing->the_post();
                          
                         $telefono = get_post_meta( $post->ID, 'telefono', true );
-                        $instagram = get_post_meta( $post->ID, 'instagram', true );
                         $facebook = get_post_meta( $post->ID, 'facebook', true );
+                        $facebook_enlace = get_post_meta( $post->ID, 'facebook_enlace', true );
+                        $instagram = get_post_meta( $post->ID, 'instagram', true );
+                        $instagram_enlace = get_post_meta( $post->ID, 'instagram_enlace', true );
                         $email = get_post_meta( $post->ID, 'email', true );
                         $sitio_web = get_post_meta( $post->ID, 'sitio_web', true ); 
+                        $sitio_web_enlace = get_post_meta( $post->ID, 'sitio_web_enlace', true );
 
                         $arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'proveedores-single-thumbnail');
                        
@@ -62,12 +65,12 @@ $imagethumb=null;
 
                                     <div  class="h-[108px] mt-auto mb-[24px] px-[4px]" > 
                                         <?php if ($telefono) {?><dd><span class="hidden">Teléfono: </span><?php echo $telefono;?></dd><?php }?> 
-                                        <?php if ($facebook) {?><dd><span>FB: </span><?php echo $facebook;?></dd><?php }?> 
-                                        <?php if ($instagram) {?><dd><span>IG: </span><?php echo $instagram ;?></dd><?php }?> 
+                                        <?php if ($facebook) {?><dd><span>FB: </span> <?php if ($facebook_enlace){?> <a class="hover:underline hover:bg-primary-500 "  target="_blank"  href="<?php echo $facebook_enlace;?>"><?php echo $facebook;?></a> <?php }else{ echo $facebook;} ?> </dd><?php }?> 
+                                        <?php if ($instagram) {?><dd><span>IG: </span><?php if ($instagram_enlace){?> <a class="hover:underline hover:bg-primary-500 "  target="_blank"  href="<?php echo $instagram_enlace;?>"><?php echo $instagram;?></a> <?php }else{ echo $instagram;} ?> </dd><?php }?> 
                                         
-                                        <?php if ($sitio_web) {?><dd><span class="hidden">Sitio Web: </span> <?php echo $sitio_web;?> </dd><?php }?>
+                                        <?php if ($sitio_web) {?><dd><span class="hidden">Sitio Web: </span><?php if ($sitio_web_enlace){?> <a class="hover:underline hover:bg-primary-500 "  target="_blank"  href="<?php echo $sitio_web_enlace;?>"><?php echo $sitio_web;?></a> <?php }else{ echo $instagram;} ?> </dd><?php }?>
                                         
-                                        <?php if ($email) {?><dd><span class="hidden">Email: </span><a href="mailto:<?php echo $email;?>"><?php echo $email;?></a></dd><?php }?>
+                                        <?php if ($email) {?><dd><span class="hidden">Email: </span><a class="hover:underline hover:bg-primary-500 "  target="_blank" href="mailto:<?php echo $email;?>"><?php echo $email;?></a></dd><?php }?>
                                      
                                     </div>
                               <!--   </div> -->
