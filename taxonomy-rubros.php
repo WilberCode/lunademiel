@@ -61,7 +61,7 @@ $catId = get_queried_object()->term_id; //capturo el ID del current term
                         $sitio_web = get_post_meta( $post->ID, 'sitio_web', true ); 
                         $sitio_web_enlace = get_post_meta( $post->ID, 'sitio_web_enlace', true );
 
-                        $arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'proveedores-single-thumbnail');
+                        $arr_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
                        
                         if ($arr_image):
                             $imagethumb = $arr_image[0];
