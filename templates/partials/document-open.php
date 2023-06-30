@@ -45,7 +45,7 @@
 
             gtag('config', 'G-8DC95B28BG'); 
         </script>
-   <?php wp_head() ?> 
+ 
  
    <!-- Google Tag Manager -->
     <script>
@@ -63,7 +63,7 @@
 
    
 
- 
+    <?php wp_head() ?> 
 </head>
 <body <?php body_class();  ?>  > 
     <!-- Google Tag Manager (noscript) -->
