@@ -50,7 +50,7 @@
  
  
    <!-- Google Tag Manager -->
-    <script>
+  <!--   <script>
       window.onload = function(){
         setTimeout(function(){
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -60,13 +60,13 @@
                 })(window,document,'script','dataLayer','GTM-5BVRXLK');
             },3000);
         }
-    </script>
+    </script> -->
     <!-- End Google Tag Manager -->
 
    
 </head>
 <body <?php body_class();  ?>  > 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BVRXLK"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!--     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BVRXLK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
     <!-- End Google Tag Manager (noscript) -->
