@@ -38,14 +38,12 @@
 
      <!-- Google tag (gtag.js) -->
      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DC95B28BG"></script>
-        <script>
-               setTimeout(function(){
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <script> 
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'G-8DC95B28BG');
-    },2000); 
+            gtag('config', 'G-8DC95B28BG'); 
         </script>
    <?php wp_head() ?> 
  
