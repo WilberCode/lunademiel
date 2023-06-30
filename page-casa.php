@@ -129,10 +129,10 @@ Template Post Type: post, page, event
             }
 
         }
-        .social-item-link {
+        a.social-item-link {
             position:relative;
         }
-        .social-item-link a span{
+        a.social-item-link  span{
             font-size:0;
             position:absolute;
         }
