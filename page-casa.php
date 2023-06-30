@@ -129,6 +129,13 @@ Template Post Type: post, page, event
             }
 
         }
+        .social-item-link {
+            position:relative;
+        }
+        .social-item-link a span{
+            font-size:0;
+            position:absolute;
+        }
     </style>
 </head>
 
@@ -146,21 +153,21 @@ Template Post Type: post, page, event
         <div class="social">
             <div class="social-item" id="lovely" >
                 <a class="social-item-link   " href="https://www.instagram.com/lovelytabledesign/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Lovely.jpg" alt="lovely table desing"></a>
-                <a class="social-item-link link_click link_click_Lovely_Design" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Instagram']);" href="https://www.instagram.com/lovelyhome.pe/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram01-1.jpg?v=1" alt="lovely table desing">Lovely Design - Instagram</a>
-                <a class="social-item-link link_click link_click_Lovely_Design" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Facebook']);" href="https://www.facebook.com/profile.php?id=100063798243118" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook01-1.jpg?v=1" alt="lovely table desing">Lovely Design - Facebook</a>
-                <a class="social-item-link link_click link_click_Lovely_Design" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51944045371&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono01.jpg" alt="lovely table desing">Lovely Design - Whatsapp</a>
+                <a class="social-item-link link_click link_click_Lovely_Design" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Instagram']);" href="https://www.instagram.com/lovelyhome.pe/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram01-1.jpg?v=1" alt="lovely table desing"> <span> Lovely Design - Instagram </span> </a>
+                <a class="social-item-link link_click link_click_Lovely_Design" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Facebook']);" href="https://www.facebook.com/profile.php?id=100063798243118" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook01-1.jpg?v=1" alt="lovely table desing"> <span> Lovely Design - Facebook </span> </a>
+                <a class="social-item-link link_click link_click_Lovely_Design" onclick="_gaq.push(['_trackEvent', 'Lovely Design', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51944045371&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono01.jpg" alt="lovely table desing"> <span> Lovely Design - Whatsapp </span> </a>
             </div>
             <div class="social-item" id="guit">
                 <a class="social-item-link  " href="https://www.instagram.com/larimavila_home/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/lari.jpg" alt="lari mavila"></a>
-                <a class="social-item-link link_click link_click_Lari_Mavila" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Facebook']);"  href="https://www.instagram.com/larimavila_home/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram02.jpg" alt="lari mavila">Lari Mavila - Instagram</a>
-                <a class="social-item-link link_click link_click_Lari_Mavila" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Instagram']);"  href="https://web.facebook.com/larimavilahome?_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook02.jpg" alt="lari mavila">Lari Mavila - Facebook</a>
-                <a class="social-item-link link_click link_click_Lari_Mavila" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51999516321&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono02.jpg" alt="lari mavila">Lari Mavila - Whatsapp</a>
+                <a class="social-item-link link_click link_click_Lari_Mavila" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Facebook']);"  href="https://www.instagram.com/larimavila_home/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram02.jpg" alt="lari mavila"> <span>Lari Mavila - Instagram</span></a>
+                <a class="social-item-link link_click link_click_Lari_Mavila" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Instagram']);"  href="https://web.facebook.com/larimavilahome?_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook02.jpg" alt="lari mavila"> <span>Lari Mavila - Facebook</span></a>
+                <a class="social-item-link link_click link_click_Lari_Mavila" onclick="_gaq.push(['_trackEvent', 'Lari Mavila', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51999516321&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono02.jpg" alt="lari mavila"> <span>Lari Mavila - Whatsapp</span></a>
             </div>
             <div class="social-item" id="larimavila">
                 <a class="social-item-link  " href="https://www.instagram.com/guitshop/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/guit.jpg" alt="guit shop"></a>
-                <a class="social-item-link link_click link_click_Guit" onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Facebook']);" href="https://www.instagram.com/guitshop/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram03.jpg" alt="guit shop">Guit - Instagram</a>
-                <a class="social-item-link link_click link_click_Guit " onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Instagram']);"  href="https://web.facebook.com/guitshop?_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook03.jpg" alt="guit shop">Guit - Facebook</a>
-                <a class="social-item-link link_click link_click_Guit" onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51999669966&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono03.jpg" alt="guit shop">Guit - Whatsapp</a>
+                <a class="social-item-link link_click link_click_Guit" onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Facebook']);" href="https://www.instagram.com/guitshop/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram03.jpg" alt="guit shop"> <span>Guit - Instagram</span></a>
+                <a class="social-item-link link_click link_click_Guit " onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Instagram']);"  href="https://web.facebook.com/guitshop?_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook03.jpg" alt="guit shop"> <span>Guit - Facebook</span></a>
+                <a class="social-item-link link_click link_click_Guit" onclick="_gaq.push(['_trackEvent', 'Guit', 'Enlace Saliente', 'Whatsapp']);" href="https://api.whatsapp.com/send?phone=+51999669966&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono03.jpg" alt="guit shop"> <span>Guit - Whatsapp</span></a>
             </div>
         </div>
         <div class="landingtiendas-footer">
