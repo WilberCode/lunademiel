@@ -36,6 +36,8 @@
     </script> -->
  
 
+    <?php wp_head(); ?> 
+
      <!-- Google tag (gtag.js) -->
      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DC95B28BG"></script>
         <script> 
@@ -62,8 +64,6 @@
     <!-- End Google Tag Manager -->
 
    
-
-    <?php wp_head() ?> 
 </head>
 <body <?php body_class();  ?>  > 
     <!-- Google Tag Manager (noscript) -->
