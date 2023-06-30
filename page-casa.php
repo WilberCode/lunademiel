@@ -116,6 +116,11 @@ Template Post Type: post, page, event
 </head>
 
 <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BVRXLK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="container">
             <div class="landingtiendas">
                 <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/LandingTiendas.jpg" alt="landing tiendas">
