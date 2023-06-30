@@ -134,6 +134,7 @@ Template Post Type: post, page, event
         }
         a.social-item-link  {
             font-size:0; 
+            display: block;
         }
     </style>
 </head>
@@ -153,20 +154,20 @@ Template Post Type: post, page, event
             <div class="social-item" id="lovely" >
                 <a class="social-item-link   " href="https://www.instagram.com/lovelytabledesign/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Lovely.jpg" alt="lovely table desing"></a>
                 <a class="social-item-link link_click link_click_Lovely_Design"  id="link_click_Lovely_Design_Instagram" href="https://www.instagram.com/lovelyhome.pe/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram01-1.jpg?v=1" alt="lovely table desing">  Lovely Design - Instagram </a>
-                <a class="social-item-link link_click link_click_Lovely_Design"   href="https://www.facebook.com/profile.php?id=100063798243118" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook01-1.jpg?v=1" alt="lovely table desing">  Lovely Design - Facebook </a>
-                <a class="social-item-link link_click link_click_Lovely_Design"  href="https://api.whatsapp.com/send?phone=+51944045371&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono01.jpg" alt="lovely table desing">  Lovely Design - Whatsapp </a>
+                <a class="social-item-link link_click link_click_Lovely_Design"  id="link_click_Lovely_Design_Facebook"  href="https://www.facebook.com/profile.php?id=100063798243118" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook01-1.jpg?v=1" alt="lovely table desing">  Lovely Design - Facebook </a>
+                <a class="social-item-link link_click link_click_Lovely_Design"  id="link_click_Lovely_Design_Whatsapp" href="https://api.whatsapp.com/send?phone=+51944045371&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono01.jpg" alt="lovely table desing">  Lovely Design - Whatsapp </a>
             </div>
             <div class="social-item" id="guit">
                 <a class="social-item-link  " href="https://www.instagram.com/larimavila_home/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/lari.jpg" alt="lari mavila"></a>
-                <a class="social-item-link link_click link_click_Lari_Mavila"   href="https://www.instagram.com/larimavila_home/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram02.jpg" alt="lari mavila"> Lari Mavila - Instagram</a>
-                <a class="social-item-link link_click link_click_Lari_Mavila"    href="https://web.facebook.com/larimavilahome?_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook02.jpg" alt="lari mavila"> Lari Mavila - Facebook</a>
-                <a class="social-item-link link_click link_click_Lari_Mavila"   href="https://api.whatsapp.com/send?phone=+51999516321&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono02.jpg" alt="lari mavila"> Lari Mavila - Whatsapp</a>
+                <a class="social-item-link link_click link_click_Lari_Mavila" id="link_click_Lari_Mavila_Instagram"  href="https://www.instagram.com/larimavila_home/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram02.jpg" alt="lari mavila"> Lari Mavila - Instagram</a>
+                <a class="social-item-link link_click link_click_Lari_Mavila" id="link_click_Lari_Mavila_Facebook"   href="https://web.facebook.com/larimavilahome?_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook02.jpg" alt="lari mavila"> Lari Mavila - Facebook</a>
+                <a class="social-item-link link_click link_click_Lari_Mavila" id="link_click_Lari_Mavila_Whatsapp"  href="https://api.whatsapp.com/send?phone=+51999516321&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono02.jpg" alt="lari mavila"> Lari Mavila - Whatsapp</a>
             </div>
             <div class="social-item" id="larimavila">
                 <a class="social-item-link  " href="https://www.instagram.com/guitshop/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/guit.jpg" alt="guit shop"></a>
-                <a class="social-item-link link_click link_click_Guit"   href="https://www.instagram.com/guitshop/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram03.jpg" alt="guit shop"> Guit - Instagram</a>
-                <a class="social-item-link link_click link_click_Guit "  href="https://web.facebook.com/guitshop?_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook03.jpg" alt="guit shop"> Guit - Facebook</a>
-                <a class="social-item-link link_click link_click_Guit"   href="https://api.whatsapp.com/send?phone=+51999669966&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono03.jpg" alt="guit shop"> Guit - Whatsapp</a>
+                <a class="social-item-link link_click link_click_Guit"  id="link_click_Guit_Instagram"   href="https://www.instagram.com/guitshop/" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Instagram03.jpg" alt="guit shop"> Guit - Instagram</a>
+                <a class="social-item-link link_click link_click_Guit "  id="link_click_Guit_Facebook"   href="https://web.facebook.com/guitshop?_rdc=1&_rdr" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Facebook03.jpg" alt="guit shop"> Guit - Facebook</a>
+                <a class="social-item-link link_click link_click_Guit"  id="link_click_Guit_Whatsapp"    href="https://api.whatsapp.com/send?phone=+51999669966&text=Hola" target="_blank"><img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/casa/Telefono03.jpg" alt="guit shop"> Guit - Whatsapp</a>
             </div>
         </div>
         <div class="landingtiendas-footer">
