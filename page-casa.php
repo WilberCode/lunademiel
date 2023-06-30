@@ -132,6 +132,9 @@ Template Post Type: post, page, event
         a.social-item-link {
             position:relative;
         }
+        a.social-item-link img{
+           display: block;
+        }
         a.social-item-link  span{
             font-size:0;
             position:absolute;
