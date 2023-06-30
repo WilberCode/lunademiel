@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title><?= wp_get_document_title() ?></title>  
-    <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');</script>
+  <!--   <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');</script> -->
     <?php if (get_field('seo_keywords'))  { ?>
         <meta name="keywords" content="<?php the_field('seo_keywords');?>">  
     <?php }else{?>
@@ -34,19 +34,9 @@
         
     }
     </script>
+ 
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DC95B28BG"></script>
-    <script>
-       
-     setTimeout(function(){
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-8DC95B28BG');
-    },3000); 
-    </script>
+    
  
    <!-- Google Tag Manager -->
     <script>
@@ -61,6 +51,18 @@
         }
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DC95B28BG"></script>
+        <script>
+               setTimeout(function(){
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8DC95B28BG');
+    },2000); 
+        </script>
    <?php wp_head() ?> 
 
  
