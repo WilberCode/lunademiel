@@ -8,11 +8,12 @@ function get_post_infront($category=''){
 	$post_image = '';
 	$post_link = '';
 	$post_category_image = '';
+/* 	$post_totals = 4; */
 	$args = array(
 	'post_type' =>  $category,
 	'orderby' => 'date',
 	'orderby' => 'desc',
-	'posts_per_page' => 4
+	'posts_per_page' => 5
 	);
 
 	$listing = new WP_query($args);
