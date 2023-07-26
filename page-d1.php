@@ -22,7 +22,7 @@ Template Post Type: post, page, event
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-           gtag('config', 'G-8DC95B28BG'); 
+       /*     gtag('config', 'G-8DC95B28BG');  */
         </script>
  
  
@@ -30,11 +30,11 @@ Template Post Type: post, page, event
     <script>
       window.onload = function(){
         setTimeout(function(){
-                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            /*     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','GTM-5BVRXLK');
+                })(window,document,'script','dataLayer','GTM-5BVRXLK'); */
             },3000);
         }
     </script>
@@ -62,12 +62,10 @@ Template Post Type: post, page, event
                 padding: 0 40px;
             }  */
         } 
-    /*     .social-item{
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            padding-bottom:40px;
-        } */
+        .social-item-link{
+           font-size:0;
+           display: block;
+        }
    
     </style>
 </head>
@@ -84,13 +82,15 @@ Template Post Type: post, page, event
         </div>
         <div >
             <a id="Correo" class="social-item-link" href="mailto:sedemiraflores@d1-dance.com" target="_blank">
+               Correo
               <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/d1/mail.jpg?v=1" alt="mail">
            </a>
           
        </div>
         <div >
-            <a  id="Teléfono" class="social-item-link" href="https://api.whatsapp.com/send?phone=+51960582206&text=Quiero más información" target="_blank">
-            <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/d1/celular.jpg?v=1" alt="celular">
+            <a  id="Whatsapp" class="social-item-link" href="https://api.whatsapp.com/send?phone=+51960582206&text=Quiero más información" target="_blank">
+            <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/d1/celular.jpg?v=1" alt="Whatsapp">
+            Whatsapp
            </a>
       
        </div>
