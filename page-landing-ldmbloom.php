@@ -80,14 +80,14 @@ Template Post Type: post, page, event
         <div >
             <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bloom/banner.jpg" alt="Bloom"> 
         </div>
-        <div >
+        <div style="margin-top:56px;" >
             <a id="Instagram" class="social-item-link" href="https://www.instagram.com/mrbloom.pe/" target="_blank">
                Correo
               <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bloom/instagram.jpg?v=1" alt="instagram">
            </a>
           
        </div>
-        <div >
+        <div style="margin-bottom:56px;" >
             <a  id="Whatsapp" class="social-item-link" href="https://api.whatsapp.com/send?phone=+519704858861&text=Quiero más información" target="_blank">
             <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bloom/whatsapp.jpg?v=1" alt="Whatsapp">
             Whatsapp
