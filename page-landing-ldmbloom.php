@@ -66,6 +66,20 @@ Template Post Type: post, page, event
            font-size:0;
            display: block;
         }
+        .mt-60{
+            margin-top:56px;
+        }
+        .mb-56{
+            margin-bottom:56px;
+        }
+        @media (min-width: 750px){
+           .mt-60{
+              margin-top:38px;
+            }
+            .mb-56{
+                margin-bottom:50px;
+            }
+        } 
    
     </style>
 </head>
@@ -80,15 +94,15 @@ Template Post Type: post, page, event
         <div >
             <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bloom/banner.jpg" alt="Bloom"> 
         </div>
-        <div style="margin-top:56px;" >
+        <div class="mt-60" >
             <a id="Instagram" class="social-item-link" href="https://www.instagram.com/mrbloom.pe/" target="_blank">
                Correo
               <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bloom/instagram.jpg?v=1" alt="instagram">
            </a>
           
        </div>
-        <div style="margin-bottom:56px;" >
-            <a  id="Whatsapp" class="social-item-link" href="https://api.whatsapp.com/send?phone=+519704858861&text=Quiero más información" target="_blank">
+        <div class="mb-56" >
+            <a  id="Whatsapp" class="social-item-link" href="https://api.whatsapp.com/send?phone=+51970485861&text=Quiero más información" target="_blank">
             <img class="casa_image" src="<?=home_url();?>/wp-content/themes/ldm/landing/bloom/whatsapp.jpg?v=1" alt="Whatsapp">
             Whatsapp
            </a>
