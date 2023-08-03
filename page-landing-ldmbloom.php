@@ -72,7 +72,7 @@ Template Post Type: post, page, event
         .mb-56{
             margin-bottom:56px;
         }
-        @media (min-width: 750px){
+        @media (max-width: 750px){
            .mt-60{
               margin-top:38px;
             }
