@@ -102,7 +102,7 @@
         <?php } ?> 
  
       
-        <div  class=" bg-primary-500 text-white py-[2rem] sm:hidden ">
+        <div  class=" bg-primary-500 text-white py-[2rem]   ">
             <div class="max-w-container">
                 <div class="flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0 space-x-0 sm:space-x-2 "> 
                     <!--SUSCRÍBETE-->
