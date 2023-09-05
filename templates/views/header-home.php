@@ -95,7 +95,7 @@
                 <?php // dynamic_sidebar('home-banner') ?>
                 <img src="<?=the_field('home_banner_image');?>" alt="ANDÁMOS SIN BUSCARNOS PERO SABIENDO QUE  ANDÁBAMOS">   
                 <div class="banner-home-content md:absolute md:mt-[10em] maxmd:py-2 w-full max-w-[720px] text-center px-[10px] " >
-                    <h3  class="px-4 py-[0.4em] bg-primary-500 text-black text-[18px] md:text-[23px] leading-none" >ANDÁMOS SIN BUSCARNOS PERO SABIENDO QUE  ANDÁBAMOS</h3>
+                    <h3  class="px-4 py-[0.4em] bg-primary-500 text-black text-[18px] md:text-[23px] leading-none" >ANDÁBAMOS SIN BUSCARNOS PERO SABIENDO QUE ANDÁBAMOS</h3>
                     <h2 class="px-4 py-1 leading-none bg-white bg-opacity-90 text-primary-500 mt-[0.4rem] text-[24px] sm:text-[35px] md:text-[48px] text-center flex justify-center maxmd:flex-col items-center tracking-[3.5px] font-medium " > PARA ECONTRARNOS <span class=" tracking-normal text-[21px] font-medium text-dark sm:mt-[15px] inline-flex " > -  Cortázar</span> </h2>
                 </div>
             </div> 
