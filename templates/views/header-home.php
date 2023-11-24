@@ -91,7 +91,8 @@
  
     
             <div class="banner-home w-full max-w-[1366px] flex flex-col justify-center items-center mx-auto " > 
-                <?php  dynamic_sidebar('home-banner') ?>
+                <?php // dynamic_sidebar('home-banner') ?>
+                <?php echo do_shortcode('[metaslider id="28104"]'); ?>
                 <!-- <img src="<?php//=the_field('home_banner_image');?>" alt="ANDÁMOS SIN BUSCARNOS PERO SABIENDO QUE  ANDÁBAMOS">   
                 <div class="banner-home-content md:absolute md:mt-[10em] maxmd:py-2 w-full max-w-[720px] text-center px-[10px] " >
                     <h3  class="px-4 py-[0.4em] bg-primary-500 text-black text-[18px] md:text-[23px] leading-none" >ANDÁBAMOS SIN BUSCARNOS PERO SABIENDO QUE ANDÁBAMOS</h3>
