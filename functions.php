@@ -44,6 +44,40 @@ require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
 
  
 
+/* if ( is_product() ) { */
+
+    // Eliminar todos los CSS de WooCommerce de golpe
+/*     add_filter( 'woocommerce_enqueue_styles', '__return_false' ); */
+/* } */
+
+add_action( 'wp_enqueue_scripts', 'remove_woocommerce_styles', 100 );
+
+function remove_woocommerce_styles() {
+    if ( function_exists( 'is_woocommerce' ) ) {
+     
+        // Desenqueuar los estilos de WooCommerce
+        /* wp_dequeue_style( 'woocommerce-layout' ); */
+       /*  wp_dequeue_style( 'woocommerce-general' ); */
+       /*  wp_dequeue_style( 'woocommerce-smallscreen' );
+        wp_dequeue_style( 'woocommerce_frontend_styles' ); 
+        wp_dequeue_style( 'woocommerce_fancybox_styles' );
+        wp_dequeue_style( 'woocommerce_chosen_styles' );
+           wp_dequeue_style( 'woocommerce-inline' );
+        wp_dequeue_style( 'woocommerce-variation' );
+        wp_dequeue_style( 'woocommerce_prettyPhoto_css' );
+      
+        wp_dequeue_style( 'woocommerce-add-to-cart' );
+    
+        wp_dequeue_style( 'woocommerce-grouped' );
+        wp_dequeue_style( 'woocommerce-tweaksmile' ); */
+    }
+}
+
+ 
+
+
+ 
+
 // Get the url of thumbnail     
 function thumbnail_image_url($size){
     global $post; 
@@ -158,4 +192,7 @@ require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';
 /* Load more posts - END */
  
  
- 
+
+/* WOOCOMMERCE */
+
+require get_stylesheet_directory() . '/inc/tienda.php';

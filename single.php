@@ -1,9 +1,17 @@
 <?php 
  get_header();
 $the_current_post_type=null;
-if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the_ID() ) == 'bodas' || get_post_type( get_the_ID() ) == 'viajes' || get_post_type( get_the_ID() ) == 'novedades' || get_post_type( get_the_ID() ) == 'promociones' || get_post_type( get_the_ID() ) == 'agenda-semanal' ) {
+function isPostType($posttype){
+   return get_post_type( get_the_ID() ) == $posttype;
+}
+/* if ( get_post_type( get_the_ID() ) == 'mundo-parejas' ||  get_post_type( get_the_ID() ) == 'bodas' || get_post_type( get_the_ID() ) == 'viajes' || get_post_type( get_the_ID() ) == 'novedades' || get_post_type( get_the_ID() ) == 'promociones' || get_post_type( get_the_ID() ) == 'agenda-semanal' ) {
+    $the_current_post_type  =  get_post_type( get_the_ID() );
+}  */
+if (isPostType('mundo-parejas') ||  isPostType('bodas') || isPostType('viajes') || isPostType('novedades') || isPostType('promociones') ||isPostType('agenda-semanal' ) ){
     $the_current_post_type  =  get_post_type( get_the_ID() );
 } 
+
+
  ?> 
 <div class="single-content" >
   <div class="container">
