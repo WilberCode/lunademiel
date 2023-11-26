@@ -3,28 +3,15 @@ get_header();
 
 global $wp;
 $current_slug = add_query_arg( array(), $wp->request ); 
-  
- /* 
-$slug_name = $current_slug; */
-?> 
-
-
-
-<!-- <pre>
-	<code>
-	<?php //echo $wp->query_vars ; ?>
-	</code>
-</pre>
- -->
  
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<main class="main">
 		<div class="container">
 			<div class="mb-8"> 
 				<div class="mt-11 mb-5">
-					<?php edit_post_link(__('Editar esta entrada','html5reset'), '<span  class="page-edit" >', '</span>'); ?>
+				<!-- 	<?php // edit_post_link(__('Editar esta entrada','html5reset'), '<span  class="page-edit" >', '</span>'); ?> -->
 					<h1  class=" text-[35px] sm:text-[40px] text-primary-500 leading-8 "><?php the_title(); ?></h1>
-					<div class=" text-[18px] sm:text-[20px]  ">	
+					<div class="">	
 						<?php the_content(); ?>
 					</div>
 				</div>

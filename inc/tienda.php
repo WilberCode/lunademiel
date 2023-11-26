@@ -52,7 +52,11 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_ex
 add_action('woocommerce_single_product_summary', 'comprar_por_whatsapp', 32);
 function comprar_por_whatsapp() {
     global $product;
-    echo '<a  class="py-[11px] inline-flex justify-center px-2 text-lg border   border-black w-full max-w-[334px] " href="#">QUIERO COMPRAR POR WHATSAPP</a> ';
+    echo '<a  class="py-[11px] font-semibold inline-flex tracking-[0.60px] text-[13.99px] justify-center px-2   border  !text-black  border-black w-full max-w-[330px] " href="#">QUIERO COMPRAR POR WHATSAPP</a> ';
+}
+add_action('woocommerce_single_product_summary', 'logo_ldm', 33);
+function logo_ldm() { 
+    echo '<img class="w-full !max-w-[80px] mt-[37px] lg:!max-w-[100px] ml-auto" src="'.get_template_directory_uri().'/tienda/ldm.svg'.'" alt="">';
 }
 
 
@@ -128,8 +132,8 @@ function display_product_images_after_summary() {
 
     // Verificar si hay imágenes del producto
     if (has_post_thumbnail() || $product->get_gallery_image_ids()) {
-        echo '<div class="product-images-after-summary">'; // Puedes cambiar esta clase según tu diseño CSS
-
+        echo '<div class="product-featured"> ';  
+        echo '<div class="product-featured-gallery">';  
         // Mostrar la imagen destacada
         if (has_post_thumbnail()) {
             echo '<div class="product-featured-image">';
@@ -141,13 +145,49 @@ function display_product_images_after_summary() {
         $gallery_image_ids = $product->get_gallery_image_ids();
         if ($gallery_image_ids) {
             foreach ($gallery_image_ids as $image_id) {
-                echo '<div class="product-gallery-image">';
+                echo '<div class="product-featured-image">';
                 echo wp_get_attachment_image($image_id, 'woocommerce_single');
                 echo '</div>';
             }
         }
 
+         echo '</div>';
         echo '</div>';
     }
 }
 add_action('woocommerce_after_single_product', 'display_product_images_after_summary', 10);
+
+
+
+/* Remove tabs - start*/ 
+add_filter( 'woocommerce_product_tabs', 'remove_product_tabs', 98 );
+function remove_product_tabs( $tabs ) {
+    unset( $tabs['description'] );       // Remove the description tab
+    unset( $tabs['additional_information'] );  // Remove the additional information tab
+    unset( $tabs['reviews'] );           // Remove the reviews tab
+    return $tabs;
+}
+/* hide tabs - end*/
+
+/* related products to the end - start */
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+ 
+add_action( 'woocommerce_after_single_product', 'move_related_products_to_end' );
+function move_related_products_to_end() {
+    global $product;
+    if ( $product ) { 
+        woocommerce_output_related_products(); 
+    }
+}
+/* related products to the end - end */
+
+
+/* Change Add to Cart text for catalog product list - Start*/
+function change_catalog_add_to_cart_text($text) {
+    if (is_shop() || is_product_category() || is_product_tag()) {  
+        $text = 'SHOP & LOVE NOW!';  
+    }
+    return $text;
+}
+add_filter('woocommerce_product_add_to_cart_text', 'change_catalog_add_to_cart_text', 10, 1);
+/* Change Add to Cart text for catalog product list - End*/
