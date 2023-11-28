@@ -196,3 +196,164 @@ require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';
 /* WOOCOMMERCE */
 
 require get_stylesheet_directory() . '/inc/tienda.php';
+
+/* 
+//Agregara distritos a Woocommerce
+add_filter( 'woocommerce_states','goowoo_add_states' );
+function goowoo_add_states( $states ){
+	$states['PE'] = array(
+		'LC' =>__('Lima', 'woocommerce'), 
+		'AT' =>__('Ate', 'woocommerce'),
+		'BA' =>__('Barranco', 'woocommerce'),
+		'BR' =>__('Breña', 'woocommerce'), 
+		'CH' =>__('Chorrillos', 'woocommerce'),
+		'EA' =>__('El Agustino', 'woocommerce'),
+		'IN' =>__('Independencia', 'woocommerce'),
+		'JM' =>__('Jesus Maria', 'woocommerce'),
+		'LM' =>__('La Molina', 'woocommerce'),
+		'LV' =>__('La Victoria', 'woocommerce'),
+		'LN' =>__('Lince', 'woocommerce'),
+		'LO' =>__('Los Olivos', 'woocommerce'),
+		'MG' =>__('Magdalena del Mar', 'woocommerce'),
+		'PL' =>__('Pueblo Libre', 'woocommerce'),
+		'MI' =>__('Miraflores', 'woocommerce'), 
+		'RI' =>__('Rimac', 'woocommerce'),
+		'SB' =>__('San Borja', 'woocommerce'),
+		'SI' =>__('San Isidro', 'woocommerce'),
+		'SJL' =>__('San Juan de Lurigancho', 'woocommerce'),
+		'SJM' =>__('San Juan de Miraflores', 'woocommerce'),
+		'SL' =>__('San Luis', 'woocommerce'),
+		'SP' =>__('San Martin de Porres', 'woocommerce'), 
+		'SM' =>__('San Miguel', 'woocommerce'),
+		'SA' =>__('Santa Anita', 'woocommerce'),
+		'SU' =>__('Santiago de Surco', 'woocommerce'),
+		'SR' =>__('Surquillo', 'woocommerce'),
+		'VS' =>__('Villa El Salvador', 'woocommerce') 
+ 	);
+ return $states;
+} */
+
+
+//Agregara departamentos a Woocommerce
+
+/* 
+add_filter( 'woocommerce_countries','goowoo_add_countries' );
+function goowoo_add_countries( $countries ){
+	$countries = array(
+	'AF' => __( 'Amazonas', 'woocommerce' ),
+	'AX' => __( 'Ancash', 'woocommerce' ),
+	'AL' => __( 'Apurimac', 'woocommerce' ),
+	'DZ' => __( 'Arequipa', 'woocommerce' ),
+	'AS' => __( 'Ayacucho', 'woocommerce' ),
+	'AD' => __( 'Cajamarca', 'woocommerce' ),
+	'AO' => __( 'Cusco', 'woocommerce' ),
+	'AI' => __( 'Huancavelica', 'woocommerce' ),
+	'AQ' => __( 'Huanuco', 'woocommerce' ),
+	'AG' => __( 'Ica', 'woocommerce' ),
+	'AR' => __( 'Junin', 'woocommerce' ),
+	'AM' => __( 'La libertad', 'woocommerce' ),
+	'AW' => __( 'Lambayeque', 'woocommerce' ),
+	'PE' => __( 'Lima', 'woocommerce' ),
+	'AU' => __( 'Loreto', 'woocommerce' ),
+	'AT' => __( 'Madre de dios', 'woocommerce' ),
+	'AZ' => __( 'Moquegua', 'woocommerce' ),
+	'BS' => __( 'Pasco', 'woocommerce' ),
+	'BH' => __( 'Piura', 'woocommerce' ),
+	'BY' => __( 'Puno', 'woocommerce' ),
+	'BQ' => __( 'San martin', 'woocommerce' ),
+	'BG' => __( 'Tacna', 'woocommerce' ),
+	'KH' => __( 'Tumbes', 'woocommerce' ),
+	'CA' => __( 'Ucayali', 'woocommerce' ),
+ 	);
+ return $countries;
+}
+//Agregara distritos a Woocommerce
+add_filter( 'woocommerce_states','goowoo_add_states' );
+function goowoo_add_states( $states )
+{
+       return array (
+	    'PE' => array(
+		'CA' => __( 'Cercado de Lima', 'woocommerce' ),
+		'BR' => __( 'Ate', 'woocommerce' ),
+		'CH' => __( 'Barranco', 'woocommerce' ),
+		'JM' => __( 'Breña', 'woocommerce' ),
+		'CR' => __( 'Chorrillos', 'woocommerce' ),
+		'LM' => __( 'El Agustino', 'woocommerce' ),
+		'LV' => __( 'Jesús  María', 'woocommerce' ),
+		'LI' => __( 'La Molina', 'woocommerce' ),
+		'MD' => __( 'La Victoria', 'woocommerce' ),
+		'PU' => __( 'Lince', 'woocommerce' ),
+		'SI' => __( 'Magdalena del Mar', 'woocommerce' ),
+		'SL' => __( 'Miraflores', 'woocommerce' ),
+		'SY' => __( 'Pueblo Libre', 'woocommerce' ),
+		'SS' => __( 'Rimac', 'woocommerce' ),
+		'SU' => __( 'San Isidro', 'woocommerce' ),
+		'SE' => __( 'Independencia', 'woocommerce' ),
+		'LP' => __( 'San Juan de Miraflores', 'woocommerce' ),
+		'SJ' => __( 'San Luis', 'woocommerce' ),
+		'SR' => __( 'San Martin de Porres', 'woocommerce' ),
+		'SM' => __( 'San Miguel', 'woocommerce' ),
+		'SD' => __( 'Santiago de Surco', 'woocommerce' ),
+		'SQ' => __( 'Surquillo', 'woocommerce' ),
+		'SN' => __( 'San Juan de Lurigancho', 'woocommerce' ),
+		'LO' => __( 'Los Olivos', 'woocommerce' ),
+		'SB' => __( 'San Borja', 'woocommerce' ),
+		'SA' => __( 'Santa Anita', 'woocommerce' ),
+		'CL' => __( 'Callao', 'woocommerce' ),
+		'BE' => __( 'Bellavista', 'woocommerce' ),
+		)
+ 	);
+	
+
+ //return $states;
+}
+//
+//Agregara departamentos a Woocommerce
+add_filter( 'woocommerce_continents','goowoo_add_continents' );
+function goowoo_add_continents( $continents ){
+	return array(
+	'SA' => array(
+		'name'      => __( 'South America', 'woocommerce' ),
+		'countries' => 
+   array(
+			
+    'AF',
+	'AX',
+	'AL',
+	'DZ',
+	'AS',
+	'AD',
+	'AO',
+	'AI',
+	'AQ',
+	'AG',
+	'AR',
+	'AM',
+	'AW',
+	'PE',
+	'AU',
+	'AT',
+	'AZ',
+	'BS',
+	'BH',
+	'BY',
+	'BQ',
+	'BG',
+	'KH',
+	'CA',		
+		),
+	),
+);
+}
+
+
+ */
+
+
+
+
+
+
+
+
+
