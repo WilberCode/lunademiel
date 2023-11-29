@@ -157,11 +157,11 @@ function display_product_images_after_summary() {
         echo '<div class="product-featured"> ';  
         echo '<div class="product-featured-gallery">';  
         // Mostrar la imagen destacada
-        if (has_post_thumbnail()) {
+     /*    if (has_post_thumbnail()) {
             echo '<div class="product-featured-image">';
             echo get_the_post_thumbnail($product->get_id(), 'woocommerce_single');
             echo '</div>';
-        }
+        } */
 
         // Mostrar la galería de imágenes
         $gallery_image_ids = $product->get_gallery_image_ids();
