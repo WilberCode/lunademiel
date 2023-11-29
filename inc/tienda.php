@@ -49,11 +49,33 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 9);
 
 // Mostrar el título del producto después del precio
-add_action('woocommerce_single_product_summary', 'comprar_por_whatsapp', 32);
+/* add_action('woocommerce_single_product_summary', 'comprar_por_whatsapp', 32);
 function comprar_por_whatsapp() {
     global $product;
     echo '<a  class="py-[11px] font-semibold inline-flex tracking-[0.60px] text-[13.99px] justify-center px-2   border  !text-black  border-black w-full max-w-[330px] " href="#">QUIERO COMPRAR POR WHATSAPP</a> ';
+} */
+
+add_action('woocommerce_after_add_to_cart_button', 'comprar_por_whatsapp', 32);
+
+function comprar_por_whatsapp() {
+    global $product;
+
+    // Obtenemos los detalles del producto
+    $product_id = $product->get_id();
+    $product_name = $product->get_name();
+    $product_price = $product->get_price();
+    
+    // Creamos el enlace con los datos del producto para WhatsApp
+    $whatsapp_link = 'https://api.whatsapp.com/send?phone=+51938343796&text=¡Hola! Estoy interesado en el producto: ' . urlencode($product_name) . '%0A - Precio: S/' . $product_price . '%0A - Enlace del producto: ' . get_permalink($product_id);
+
+    // Mostramos el enlace
+    echo '<a href="' . esc_url($whatsapp_link) . '" class=" comprar-whatsapp py-[11px] font-semibold inline-flex tracking-[0.60px] text-[13.99px] justify-center px-2 border !text-black border-black w-full max-w-[330px]">QUIERO COMPRAR POR WHATSAPP</a>';
 }
+
+
+
+
+
 add_action('woocommerce_single_product_summary', 'logo_ldm', 33);
 function logo_ldm() { 
     echo '<img class="w-full !max-w-[80px] mt-[37px] lg:!max-w-[100px] ml-auto" src="'.get_template_directory_uri().'/tienda/ldm.svg'.'" alt="">';
@@ -191,3 +213,10 @@ function change_catalog_add_to_cart_text($text) {
 }
 add_filter('woocommerce_product_add_to_cart_text', 'change_catalog_add_to_cart_text', 10, 1);
 /* Change Add to Cart text for catalog product list - End*/
+
+
+/* function agregar_descuento_despues_boton_agregar_carrito() {
+    // Aquí puedes colocar tu contenido adicional, como el descuento
+    echo '<div class="descuento-info"><span>Descuento 5%</span></div>';
+}
+add_action('woocommerce_after_add_to_cart_button', 'agregar_descuento_despues_boton_agregar_carrito');  */
