@@ -15,7 +15,7 @@ get_header( 'shop' );
               <div  class="pb-2" > <img class="w-full !max-w-[80px] lg:!max-w-[100px]" src="<?=$pathimage.'ldm.svg';?>" alt=""> </div>
             </div>
                <h1 class="text-[30px] lg:text-[46.9px] leading-[32px] lg:leading-[46px] mt-[26px] font-love " >DILO CON UNA <br> LOVE SHIRT</h1>
-                <p  class="text-[18px] sm:text-[21px]  leading-[24px]  sm:leading-[25.6px] " > 
+                <p  class="text-[18px] sm:text-[21px]  leading-[24px]  sm:leading-[25.6px] font-light " > 
                 edición especial limitada <br>
                 para que regales y te regales <br>
                 un polo cool para esta <br>
