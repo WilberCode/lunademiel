@@ -89,7 +89,9 @@ function wph_theme_support() {
 
 	register_nav_menus(array(
 		'main'=>'Menu Principal',
+		'main-store'=>'Menu Tienda',
 		'mobile'=>'Menú móvil', 
+		'mobile-store'=>'Menú móvil Tienda', 
 		'footer' =>'Footer Menú',
 		'social-media'=>'Social Media',
 		'menu-sidebar'=>'Menú Sidebar',
