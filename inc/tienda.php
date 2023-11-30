@@ -220,3 +220,14 @@ add_filter('woocommerce_product_add_to_cart_text', 'change_catalog_add_to_cart_t
     echo '<div class="descuento-info"><span>Descuento 5%</span></div>';
 }
 add_action('woocommerce_after_add_to_cart_button', 'agregar_descuento_despues_boton_agregar_carrito');  */
+
+
+/* Related product columns -start*/
+add_filter( 'woocommerce_output_related_products_args', 'change_related_products_count' );
+ 
+function change_related_products_count( $args ) {
+    $args['posts_per_page'] = 3; 
+    $args['columns'] = 3;  
+    return $args;
+}
+/* Related product columns -end*/
