@@ -1,5 +1,6 @@
 <?php
 
+ 
 /* WOOCOMMERCE */
 
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
@@ -148,21 +149,21 @@ function agregar_boton_eliminar_anterior($product_name, $cart_item, $cart_item_k
 /*Delete producto in checkout - End*/
  
 
-// Función para mostrar las imágenes del producto después del resumen en single-product.php
+/* // Función para mostrar las imágenes del producto después del resumen en single-product.php
 function display_product_images_after_summary() {
     global $product;
 
     // Verificar si hay imágenes del producto
     if (has_post_thumbnail() || $product->get_gallery_image_ids()) {
         echo '<div class="product-featured"> ';  
-        echo '<div class="product-featured-gallery">';  
+        echo '<div class="product-featured-gallery">';   */
         // Mostrar la imagen destacada
-     /*    if (has_post_thumbnail()) {
+      /* if (has_post_thumbnail()) { // no mostrado
             echo '<div class="product-featured-image">';
             echo get_the_post_thumbnail($product->get_id(), 'woocommerce_single');
             echo '</div>';
         } */
-
+/* 
         // Mostrar la galería de imágenes
         $gallery_image_ids = $product->get_gallery_image_ids();
         if ($gallery_image_ids) {
@@ -177,7 +178,7 @@ function display_product_images_after_summary() {
         echo '</div>';
     }
 }
-add_action('woocommerce_after_single_product', 'display_product_images_after_summary', 10);
+add_action('woocommerce_after_single_product', 'display_product_images_after_summary', 10); */
 
 
 
@@ -231,3 +232,19 @@ function change_related_products_count( $args ) {
     return $args;
 }
 /* Related product columns -end*/
+
+
+
+// Remove the first gallery image - start*/
+function quitar_primera_imagen_gallery($thumbnails) {
+    // Verificar si hay imágenes en el gallery
+    if (!empty($thumbnails) && is_array($thumbnails)) {
+        // Eliminar la primera imagen del array
+        unset($thumbnails[0]);
+    }
+    // Devolver el array actualizado
+    return $thumbnails;
+}
+ 
+add_filter('woocommerce_product_thumbnails', 'quitar_primera_imagen_gallery');
+// Remove the first gallery image - end*/
