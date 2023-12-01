@@ -149,8 +149,9 @@ function agregar_boton_eliminar_anterior($product_name, $cart_item, $cart_item_k
 /*Delete producto in checkout - End*/
  
 
-/* // Función para mostrar las imágenes del producto después del resumen en single-product.php
-function display_product_images_after_summary() {
+
+// Función para mostrar las imágenes del producto después del resumen en single-product.php
+/* function display_product_images_after_summary() {
     global $product;
 
     // Verificar si hay imágenes del producto
@@ -163,9 +164,9 @@ function display_product_images_after_summary() {
             echo get_the_post_thumbnail($product->get_id(), 'woocommerce_single');
             echo '</div>';
         } */
-/* 
+
         // Mostrar la galería de imágenes
-        $gallery_image_ids = $product->get_gallery_image_ids();
+/*         $gallery_image_ids = $product->get_gallery_image_ids();
         if ($gallery_image_ids) {
             foreach ($gallery_image_ids as $image_id) {
                 echo '<div class="product-featured-image">';
@@ -178,8 +179,8 @@ function display_product_images_after_summary() {
         echo '</div>';
     }
 }
-add_action('woocommerce_after_single_product', 'display_product_images_after_summary', 10); */
-
+add_action('woocommerce_after_single_product', 'display_product_images_after_summary', 10);
+ */
 
 
 /* Remove tabs - start*/ 
@@ -235,16 +236,21 @@ function change_related_products_count( $args ) {
 
 
 
-// Remove the first gallery image - start*/
-function quitar_primera_imagen_gallery($thumbnails) {
-    // Verificar si hay imágenes en el gallery
-    if (!empty($thumbnails) && is_array($thumbnails)) {
-        // Eliminar la primera imagen del array
-        unset($thumbnails[0]);
+// Agregar el siguiente código en el archivo functions.php de tu tema o en un plugin personalizado
+
+function custom_product_gallery_images($html, $attachment_id){
+    global $product, $post;
+
+    // Verifica si es la página de un producto individual y si tiene más de una imagen en la galería
+    if (is_product() && $attachment_id !== $product->get_image_id() && count($product->get_gallery_image_ids()) > 1) {
+        return $html;
     }
-    // Devolver el array actualizado
-    return $thumbnails;
+
+    // Si es la primera imagen, no la muestra
+    if ($attachment_id === $product->get_image_id()) {
+        return '';
+    }
+
+    return $html;
 }
- 
-add_filter('woocommerce_product_thumbnails', 'quitar_primera_imagen_gallery');
-// Remove the first gallery image - end*/
+add_filter('woocommerce_single_product_image_thumbnail_html', 'custom_product_gallery_images', 10, 2);
