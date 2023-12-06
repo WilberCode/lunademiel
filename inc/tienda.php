@@ -70,7 +70,7 @@ function comprar_por_whatsapp() {
     $whatsapp_link = 'https://api.whatsapp.com/send?phone=+51998315039&text=¡Hola! Estoy interesado en el producto: ' . urlencode($product_name) . '%0A - Precio: S/' . $product_price . '%0A - Enlace del producto: ' . get_permalink($product_id);
 
     // Mostramos el enlace
-    echo '<a href="' . esc_url($whatsapp_link) . '" class=" comprar-whatsapp leading-normal pt-[15px] pb-[11.04px] font-semibold inline-flex tracking-[0.60px] text-[13.99px] justify-center px-2 border !text-black border-black w-full max-w-[330px]" target="_blank" >QUIERO COMPRAR POR WHATSAPP</a>';
+    echo '<a href="' . esc_url($whatsapp_link) . '" class=" comprar-whatsapp leading-normal pt-[15px] pb-[11.04px] font-semibold inline-flex tracking-[0.60px] text-[13.99px] justify-center px-2 border !text-black border-black w-full max-w-[382px]" target="_blank" >QUIERO COMPRAR POR WHATSAPP</a>';
 }
 add_action('woocommerce_after_add_to_cart_button', 'comprar_por_whatsapp', 32);
 
@@ -254,3 +254,4 @@ function custom_product_gallery_images($html, $attachment_id){
     return $html;
 }
 add_filter('woocommerce_single_product_image_thumbnail_html', 'custom_product_gallery_images', 10, 2);
+ 

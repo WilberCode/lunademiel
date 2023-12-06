@@ -194,6 +194,7 @@ require get_stylesheet_directory() . '/templates/posts/load-more-posts.php';
  
 
 /* WOOCOMMERCE */
+ 
 
 require get_stylesheet_directory() . '/inc/tienda.php';
 
@@ -348,12 +349,3 @@ function goowoo_add_continents( $continents ){
 
 
  */
-
-
-
-
-
-
-
-
-
