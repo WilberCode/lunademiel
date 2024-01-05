@@ -83,18 +83,23 @@ get_header();?>
                  <?php endwhile;
                  wp_reset_postdata();
                  ?> 
-                <?php $the_query = new WP_Query( 'page_id=224' ); ?> 
-                <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>   
-                    <div class="home-box" style="background:url(<?php echo thumbnail_image_url('full')?>)">
+                 <div>
+                    <a href="<?php echo home_url( $wp->request );?>/tienda" >
+                        <img src="https://www.lunademiel.com.pe/wp-content/uploads/2024/01/polos3.jpg" alt="Polos que muestran AMOR en 6 modelos exclusivos">
+                    </a>
+                 </div>
+                <!-- <?php // $the_query = new WP_Query( 'page_id=224' ); ?> 
+                <?php // while ($the_query -> have_posts()) : $the_query -> the_post();  ?>   
+                    <div class="home-box" style="background:url(<?php //echo thumbnail_image_url('full')?>)">
                         <dl class="home-box-content ">
                             <dt>
-                                <a href="<?php the_permalink(); ?>">
-                                    <h2><?php the_title(); ?></h2> 
+                                <a href="<?php // the_permalink(); ?>">
+                                    <h2><?php // the_title(); ?></h2> 
                                 </a>
                             </dt> 
                             <dd class="text-sm mt-2"> 
                                 <?php 
-                
+                /* 
                                     $promolist = get_terms('promocion', array('hide_empty' => false) );
                                     $numberpromo = 1;
                                     foreach ($promolist as $promo) {
@@ -104,14 +109,14 @@ get_header();?>
                                         </a>
                                     <?php
                                     $numberpromo++;
-                                    } 
+                                    }  */
                                     ?>
                             </dd>
                         </dl>
                     </div>
-                 <?php endwhile;
-                 wp_reset_postdata();
-                 ?>  
+                 <?php /*  endwhile;
+                 wp_reset_postdata(); */
+                 ?>   -->
                 
             </div>
             <div  class=" flex-grow  max-w-[320px] mx-auto  ">
