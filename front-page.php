@@ -85,7 +85,7 @@ get_header();?>
                  ?> 
                  <div>
                     <a href="<?php echo home_url( $wp->request );?>/tienda" >
-                        <img src="https://www.lunademiel.com.pe/wp-content/uploads/2024/01/polos3.jpg" alt="Polos que muestran AMOR en 6 modelos exclusivos">
+                        <img src="https://www.lunademiel.com.pe/wp-content/uploads/2024/01/POLOS632x257-06.jpg" alt="Entra aquí y conoce nuestra primera colección de polos">
                     </a>
                  </div>
                 <!-- <?php // $the_query = new WP_Query( 'page_id=224' ); ?> 
