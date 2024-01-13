@@ -30,7 +30,7 @@ $number_single = 1;
 
     <div class="agenda-line mt-3 mb-3">&nbsp;</div>
     <div class="text-right px-4 lg:px-0">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_page_link();?>"   target="_blank" class="text-primary-500 text-[15px] hover:underline tracking-wider  md:text-[19px] font-semibold font-prelo inline-flex items-center">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=<?=get_permalink();?>"   target="_blank" class="text-primary-500 text-[15px] hover:underline tracking-wider  md:text-[19px] font-semibold font-prelo inline-flex items-center">
         ¡Compártelo!&nbsp;&nbsp;<img class="w-[30px] md:w-[50px] h-[30px] md:h-[50px] " src="<?=get_stylesheet_directory_uri().'/build/svg/facebook-pink.svg'?>" alt="facebook">
       </a>
     </div>
