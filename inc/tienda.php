@@ -209,7 +209,7 @@ function move_related_products_to_end() {
 /* Change Add to Cart text for catalog product list - Start*/
 function change_catalog_add_to_cart_text($text) {
     if (is_shop() || is_product_category() || is_product_tag()) {  
-        $text = 'SHOP & LOVE NOW!';  
+        $text = 'CÓMPRALO AHORA';  
     }
     return $text;
 }
