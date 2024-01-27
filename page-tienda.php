@@ -29,16 +29,16 @@ get_header( 'shop' );
         <h2  class="store-title mt-[54px] " >GRAPHIC TEES A S/59</h2>
     </div> 
  </div>
- <div class="px-2 mt-[12px]">
+ <div class="px-2 mt-[20px]">
  <?php echo do_shortcode( '[product_category category="graphic-tees" per_page="12" columns="3" orderby="menu_order" order="desc"]' );?>
  </div>
  <div class="container">
     <div  class="flex justify-center text-center" >
-        <h2  class="store-title mt-[1px] " >ILUSTRACIONES EN CUADROS S/79</h2>  
+        <h2  class="store-title store-title-ilustraciones mt-[1px] " >ILUSTRACIONES EN CUADROS S/79</h2>  
     </div> 
     <p  class="mt-[18px] text-center text-[16px]  " >Ilustraciones originales en hermosos cuadritos. Edición limitada.</p>
  </div>
- <div class="px-2 mt-[12px]">
+ <div class="px-2 mt-[12px] category-ilustraciones">
  <?php echo do_shortcode( '[product_category category="ilustraciones" per_page="12" columns="3" orderby="menu_order" order="desc"]' );?>
  </div>
 <!-- <div  class="px-2" >  -->
