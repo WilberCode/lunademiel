@@ -6,10 +6,11 @@ $pathimage = get_template_directory_uri()."/tienda/";
 get_header( 'shop' );
   
  ?> 
+  <!-- 
  <div class=" flex  justify-center " >
     <div  class="relative  " >
-        <img src="<?=$pathimage.'banner-tienda.jpg';?>" alt="">
-    <!--     <div  class="  md:absolute right-0 bottom-1 lg:bottom-[50px] xl:bottom-[80px] bg-white px-8 pt-[20px] pb-5 w-full maxmd:mx-auto max-w-[458px] " >
+        <img src="<?php //$pathimage.'banner-tienda.jpg';?>" alt="">
+       <div  class="  md:absolute right-0 bottom-1 lg:bottom-[50px] xl:bottom-[80px] bg-white px-8 pt-[20px] pb-5 w-full maxmd:mx-auto max-w-[458px] " >
             <div  class="flex justify-between " >
               <span class="py-[8px] px-[19px]  bg-primary-500  text-[15.8px] leading-[18px] rounded-[25px/13px] font-semibold self-end " >SHOP & LOVE</span>
               <div  class="pb-2" > <img class="w-full !max-w-[80px] lg:!max-w-[100px]" src="<?//=$pathimage.'ldm.svg';?>" alt=""> </div>
@@ -21,9 +22,15 @@ get_header( 'shop' );
                 un polo cool para esta <br>
                 temporada.
                 </p>
-        </div> -->
+        </div> 
     </div>
- </div>
+ </div>-->
+ <div class="banner-home w-full max-w-[1366px] flex flex-col justify-center items-center mx-auto " > 
+                
+    <?php dynamic_sidebar('tienda-banner') ?>
+               
+  </div> 
+
  <div class="container">
     <div  class="flex justify-center" >
         <h2  class="store-title mt-[54px] " >GRAPHIC TEES A S/59</h2>
