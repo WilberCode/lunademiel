@@ -84,9 +84,7 @@ get_header();?>
                  wp_reset_postdata();
                  ?> 
                  <div>
-                    <a href="<?php echo home_url( $wp->request );?>/tienda" >
-                        <img src="https://www.lunademiel.com.pe/wp-content/uploads/2024/01/POLOS632x257-06.jpg" alt="Entra aquí y conoce nuestra primera colección de polos">
-                    </a>
+                    <?php dynamic_sidebar('home-banner-tienda') ?>     
                  </div>
                 <!-- <?php // $the_query = new WP_Query( 'page_id=224' ); ?> 
                 <?php // while ($the_query -> have_posts()) : $the_query -> the_post();  ?>   

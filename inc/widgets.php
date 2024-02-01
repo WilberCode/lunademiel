@@ -126,6 +126,15 @@ function wph_front_widgets(){
         'after_title'  => '</h2>'
     ));   
     register_sidebar(array(
+        'name' => __('Home - Banner tienda'),
+        'id' =>'home-banner-tienda',
+        'description'   => 'Pequeño banner de la tienda',
+        'before_widget' => '<div class="home-banner-tienda">',
+		'after_widget'  => '</div>',
+		'before_title' => '<h2 class="hidden">',
+        'after_title'  => '</h2>'
+    ));   
+    register_sidebar(array(
         'name' => __('Tienda - Banner principal'),
         'id' =>'tienda-banner',
         'description'   => 'banner principal',
