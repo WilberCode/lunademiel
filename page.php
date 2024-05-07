@@ -17,7 +17,7 @@ $current_slug = add_query_arg( array(), $wp->request );
 				</div>
 				<div id="ajax-posts" class=" card-thumbnail  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 text-center ">
 				<?php 
-					$postsPerPage = 20;
+					$postsPerPage = 12;
 					//query subpages
 					$args = array(
 					'post_type' =>$current_slug ,
