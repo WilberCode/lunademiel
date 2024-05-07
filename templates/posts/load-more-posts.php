@@ -27,7 +27,7 @@ function more_post_ajax(){
 				$imagethumb = get_template_directory_uri()."/build/img/thumb-default.jpg";
 		endif; 
         $out .= ' 
-			<article>
+			<article class="post-'.get_the_ID().'" >
 				<a href="'.get_permalink().'" class="hover:underline"   >
 					<img src="'.$imagethumb.'" alt="'.get_the_title().'"/> 
 					<h2  class=" text-[17px] sm:text-[18px]" >'.get_the_title().'</h2>
