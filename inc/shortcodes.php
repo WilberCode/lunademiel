@@ -28,7 +28,7 @@ function get_post_infront($category=''){
 		   else :
 				$imagethumb = get_template_directory_uri()."/build/img/thumb-default.jpg";
 		   endif;
-			$post_image .= '<img class="inline-flex" src="'.$imagethumb.'" alt="'.get_the_title().'"/>'; 
+			$post_image .= '<img class="inline-flex group-hover:scale-105 transition-all ease-in-out group-hover:shadow-lg " src="'.$imagethumb.'" alt="'.get_the_title().'"/>'; 
 
 			$postType = get_post_type_object(get_post_type());
 			if ($postType) {  
@@ -39,7 +39,7 @@ function get_post_infront($category=''){
 		$countt ++;
 	endwhile;  
 
- 	$post_category_image .= '<a class="uppercase  block hover:underline" href="'.get_home_url().'/'.$post_link.'" >'. $post_image.'<h2  class="mt-4 sm:text-[20px]" >'.$post_title .'</h2> </a> ';
+ 	$post_category_image .= '<a class="uppercase  block hover:underline group " href="'.get_home_url().'/'.$post_link.'" >'. $post_image.'<h2  class="mt-4 sm:text-[20px]" >'.$post_title .'</h2> </a> ';
  
 	$posts_link =  ''; 
 

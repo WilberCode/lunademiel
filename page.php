@@ -39,8 +39,8 @@ $current_slug = add_query_arg( array(), $wp->request );
 								 $imagethumb = get_template_directory_uri()."/build/img/thumb-default.jpg";
 							endif;?>
 							    <article  class="post-<?=the_ID(); ?>" >
-                                    <a href="<?=get_permalink()?>" class="hover:underline"   >
-                                        <img src="<?=$imagethumb?>" alt="<?=get_the_title()?>" class="inline-flex w-full "/> 
+                                    <a href="<?=get_permalink()?>" class="hover:underline hover:scale-105  block transition-all ease-in-out "   >
+                                        <img src="<?=$imagethumb?>" alt="<?=get_the_title()?>" class="inline-flex w-full"/> 
                                         <h2  class=" text-[17px] sm:text-[18px]" ><?=get_the_title()?></h2>
                                     </a>
 							    </article>

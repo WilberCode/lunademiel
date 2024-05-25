@@ -142,7 +142,7 @@ get_header();?>
                       (adsbygoogle = window.adsbygoogle || []).push({});
                   </script>
         </div>
-        <section  class="max-w-[870px] mx-auto mt-10" >
+        <section  class="max-w-[953px] mx-auto mt-10" >
             <div class="grid  grid-cols-1 sm:grid-cols-3 gap-6 " >
                 <?php echo do_shortcode('[ldm_post category="mundo-parejas"]'); ?>                    
                 <?php echo do_shortcode('[ldm_post category="bodas" ]'); ?>                    

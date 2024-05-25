@@ -75,7 +75,7 @@ get_header();
 										$imagethumb = get_template_directory_uri()."/_/images/thumb-default.jpg";
 									endif;?>
 										<aticle class="">
-											<a href="<?=get_permalink()?>" class="hover:underline"   >
+											<a href="<?=get_permalink()?>" class="hover:underline hover:scale-105  block transition-all ease-in-out"   >
 												<img src="<?=$imagethumb?>" alt="<?=get_the_title()?>" /> 
 												<h2  class=" text-[17px] sm:text-[18px] mt-1" ><?=get_the_title()?></h2>
 											</a>
