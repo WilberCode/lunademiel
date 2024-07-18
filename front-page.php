@@ -165,14 +165,14 @@ get_header();?>
                     <div class="flex justify-center" > 
                         <!-- Home - as post 1 -->
                         <ins class="adsbygoogle"
-                            style="display:inline-block;width:450px;heigh450
+                            style="display:inline-block;width:450px;heigh:272px"
                             data-ad-client="ca-pub-2072313038095874"
                             data-ad-slot="5629535661"></ins>
                         <script>
                             (adsbygoogle = window.adsbygoogle || []).push({});
                         </script>
                     </div>
-                    <div class=" hidden xl1:flex  " > 
+                    <div class="flex justify-center" > 
                         <!-- Home - as post 2 -->
                         <ins class="adsbygoogle"
                             style="display:inline-block;width:450px;height:272px"
