@@ -14,8 +14,6 @@
         <meta name="keywords" content="Guía para parejas, Luna de miel, cine, entretenimiento, farándula, eventos, actividades en pareja, restaurante, novedades, celebridades, bodas, paseos, viajes, excursiones, vacaciones,fiestas, tips, regalos, oferta, promoción, promo, pareja">  
     <?php }?> 
 
-    <?php wp_head(); ?> 
-
- 
+    <?php wp_head(); ?>  
 </head>
 <body <?php body_class();  ?>  >  
