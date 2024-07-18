@@ -90,6 +90,6 @@
 	width: 100%;
 }
  </style>
-   
+    <?php wp_head(); ?>  
 </head>
 <body <?php body_class();?>>
