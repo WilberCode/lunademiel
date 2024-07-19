@@ -33,7 +33,7 @@ get_header( 'shop' );
 
  <div class="container">
     <div  class="flex justify-center" >
-        <h2  class="store-title mt-[54px] " >GRAPHIC TEES A S/59</h2>
+        <h2  class="store-title mt-[54px] " >GRAPHIC TEES de S/59 a S/49</h2>
     </div> 
  </div>
  <div class="px-2 mt-[20px]">
@@ -41,7 +41,7 @@ get_header( 'shop' );
  </div>
  <div class="container">
     <div  class="flex justify-center text-center" >
-        <h2  class="store-title store-title-ilustraciones mt-[1px] " >ILUSTRACIONES EN CUADROS S/79</h2>  
+        <h2  class="store-title store-title-ilustraciones mt-[1px] " >ILUSTRACIONES EN CUADROS de S/79 a S/69</h2>  
     </div> 
     <p  class="mt-[18px] text-center text-[16px]  " >Ilustraciones originales en hermosos cuadritos. Edición limitada.</p>
  </div>
