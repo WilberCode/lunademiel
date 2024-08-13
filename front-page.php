@@ -162,11 +162,11 @@ get_header();?>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script> -->
              <!--  <div  class="grid grid-cols-1 xl1:grid-cols-2 gap-6 content-center "> -->
-              <div  class=" ">
+              <div  class=" flex justify-center w-full" style="max-width: 450px;" >
                     <div class="flex justify-center" > 
                         <!-- Home - as post 1 -->
                         <ins class="adsbygoogle"
-                            style="display:inline-block;width:350px;height:300px"
+                            style="display:inline-block;width:450px;height:272px"
                             data-ad-client="ca-pub-2072313038095874"
                             data-ad-slot="5629535661">
                         </ins>
