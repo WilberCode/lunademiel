@@ -166,7 +166,7 @@ get_header();?>
                     <div class="flex justify-center" > 
                         <!-- Home - as post 1 -->
                         <ins class="adsbygoogle"
-                            style="display:inline-block;width:953px;height:250px"
+                            style="display:inline-block;width:350px;height:300px"
                             data-ad-client="ca-pub-2072313038095874"
                             data-ad-slot="5629535661">
                         </ins>
