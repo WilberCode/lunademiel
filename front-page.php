@@ -40,9 +40,14 @@ get_header();?>
         </div>
         <div  class="block sm:flex space-y-4 sm:space-y-0 sm:space-x-6 " > 
             <div  class="flex-1 space-y-3" > 
-                <?php $the_query = new WP_Query( 'page_id=228' ); ?> 
-                <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>   
-                    <div class=" !h-[280px] md:!h-[250px] home-box" style="background:url(<?php echo thumbnail_image_url('full')?>)">
+                <?php 
+                $image_mundo_parejas = null;
+                $the_query = new WP_Query( 'page_id=228' ); ?> 
+                <?php while ($the_query -> have_posts()) : $the_query -> the_post();  $image_mundo_parejas=thumbnail_image_url('full'); ?>   
+                <?php endwhile;
+                 wp_reset_postdata();
+                 ?> 
+                    <div class=" !h-[280px] md:!h-[250px] home-box" style="background:url(<?=$image_mundo_parejas;?>)">
                         <dl class="home-box-content !py-3 ">
                             <dt> 
                                 <a href="<?php echo home_url( $wp->request );?>/mundo-parejas/">
@@ -80,9 +85,7 @@ get_header();?>
                         </dl>
                       
                     </div>
-                 <?php endwhile;
-                 wp_reset_postdata();
-                 ?> 
+                
                  <div>
                     <?php dynamic_sidebar('home-banner-tienda') ?>     
                  </div>

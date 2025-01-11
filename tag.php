@@ -27,12 +27,7 @@ get_header(); ?>
 					wp_reset_postdata();
 				  ?>
 				</div>
-			</div> 
-				<?php /* if($post_type_exist){  */?> 
-					<!-- <div class="text-center">
-						<button id="more_posts" class="btn">Ver más artículos</button> 
-					</div> --> 
-				<?php/*  } */ ?>
+			</div>  
 			 
 		</div>
 	</main>		
